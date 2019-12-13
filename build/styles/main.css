@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #333;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: #333;
+  text-decoration: 0;
+  padding: 0.5em 1em;
+  border: 1px solid #666;
+}
+
+.btn:hover {
+  background: blue;
+  colour: #333;
+}
+
+#showcase {
+  background: #7fdbff;
+}
+
+#section-b {
+  background: #3d9770;
+}
+
+#section-c {
+  background: #FFDC00;
+}
+
+#main-footer {
+  background: #DDDDDD;
+}
+
+/*# sourceMappingURL=main.css.map */
