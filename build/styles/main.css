@@ -30,6 +30,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   display: inline-block;
   background: white;
@@ -44,8 +48,88 @@ ul {
   colour: #333;
 }
 
+.icon-container {
+  text-align: right;
+}
+
+.menu-icon {
+  color: #FFDC00;
+  font-size: 1.8em;
+  padding: 1em;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+#menu {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  padding-left: 0.5em;
+}
+
+.menu-content li {
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1.4em;
+  line-height: 0;
+  text-align: left;
+  display: block;
+  transitions: 0.3s;
+}
+
+#close-button {
+  position: absolute;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  right: 0;
+  font-size: 3em;
+}
+
+.menu-color {
+  color: whitesmoke;
+}
+
+.logo-icon {
+  color: black;
+  font-size: 1.8em;
+  padding: 0.2em;
+}
+
+#navigation-bar {
+  background: #39cccccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: min-content;
+}
+
+.logo-container {
+  flex-basis: 70%;
+}
+
+.icon-container {
+  flex-basis: 30%;
+}
+
 #showcase {
-  background: #7fdbff;
+  background: #39cccccc;
+}
+
+#section-a {
+  padding-bottom: 1.5em;
 }
 
 #section-b {
@@ -57,7 +141,12 @@ ul {
 }
 
 #main-footer {
-  background: #DDDDDD;
+  padding-top: 5em;
+  padding-bottom: 1em;
+  background: #FFDC00;
+  color: #00000070;
+  font-size: 10px;
+  line-height: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
