@@ -48,8 +48,10 @@ a {
   colour: #333;
 }
 
-.icon-container {
-  text-align: right;
+.home-icon {
+  color: #FFDC00;
+  font-size: 1.6em;
+  padding: 1em;
 }
 
 .menu-icon {
@@ -102,6 +104,11 @@ a {
   color: whitesmoke;
 }
 
+.logo-container {
+  text-align: center;
+  padding-top: 1em;
+}
+
 .logo-icon {
   color: black;
   font-size: 1.8em;
@@ -116,12 +123,14 @@ a {
   height: min-content;
 }
 
-.logo-container {
+.home-container {
   flex-basis: 70%;
+  text-align: left;
 }
 
-.icon-container {
+.menu-icon-container {
   flex-basis: 30%;
+  text-align: right;
 }
 
 #showcase {
