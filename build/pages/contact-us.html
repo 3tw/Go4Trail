@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Go 4 Trail</title>
+    <link rel="stylesheet" href="/build/styles/main.css">
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="navigation-bar">
+        <!--add home button on the left-->
+        <div class="home-container grid">
+            <a href="/build/index.html" class="home-icon"><i class="fas fa-home"></i></a>
+        </div>
+        <div class="menu-icon-container grid">
+            <button class="menu-icon" data-target="menu">
+                <i class="fas fa-bars" id="menu-button"></i>        
+            </button>
+        </div>
+    </div>
+
+    <!--menu content-->
+    <div id="menu">
+        <a id="close-button">&times;</a>
+
+        <ul class="menu-content">
+            <li><a href="runners.html" class="menu-link">Runners</a></li>
+            <li><a class="menu-link menu-link" id="races-button">Races</a></li>
+            <ul id="dropdown">
+                <li><a href="race-go.html" class="menu-link">Nova Gorica Race</a></li>
+                <li><a href="race-12km.html" class="menu-link">12km</a></li>
+                <li><a href="race-28km.html" class="menu-link">28km</a></li>
+                <li><a href="race-58km.html" class="menu-link">58km</a></li>
+            </ul>
+            <li><a href="enroll.html" class="menu-link">Enroll</a></li>
+            <li><a href="faq.html" class="menu-link">FAQ</a></li>
+            <li><a class="menu-link hide-menu">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div class="flex-box">
+        <!--section-C-->
+        <section id="section-c" class="grid flex-item">
+            <div class="box">
+                <h3 class="content-title">Ask us anything!</h3>
+                <form class="contact-form grid" action="/src/scripts/contactForm.php" method="post">
+                    <input type="text" name="name" placeholder="Full name" class="input-field">
+                    <input type="text" name="mail" placeholder="Your e-mail" class="input-field">
+                    <input type="text" name="subject" placeholder="Subject" class="input-field">
+                    <textarea name="message" rows=8 placeholder="Your Message" class="input-field"></textarea>
+                    <button type=submit name="submit">Send your message</button>
+                </form>
+                    
+            </div>
+
+            <div class="logo-container grid">
+                <a href="javascript:void(0);" class="logo-icon" data-target="menu">
+                    <i class="fab fa-instagram"></i></a>
+                <a href="javascript:void(0);" class="logo-icon" data-target="menu">
+                    <i class="fab fa-facebook-square"></i></a>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer id="main-footer" class="grid flex-footer">
+            <div>Go 4 Trail : by Teo Winkler</div>
+        </footer>
+    </div>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="/src/scripts/mainScript.js"></script>
+</body>
+</html>

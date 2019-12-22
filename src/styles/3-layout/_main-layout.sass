@@ -1,9 +1,15 @@
 #navigation-bar
-    background: #39cccccc
+    background: $green-background    
     display: flex
     flex-direction: row
     align-items: center
-    height: min-content
+    top: 0
+    left: 0
+    right: 0
+    z-index: 100
+    width: 100%
+    height: 100px
+    position: sticky
 
 .home-container
     flex-basis: 70%
@@ -14,23 +20,47 @@
     text-align: right
     
 #showcase
-    background: #39cccccc
+    background: white //replace with a picture
+    padding: 0 0.5em 0 0.5em
 
 #section-a
     padding-bottom: 1.5em
+    background: white
+    padding: 0 0.5em 0 0.5em
+
+.card-content
+    padding-top: 1em
+    padding-bottom: 1em
 
 #section-b
-    background: #3d9770
+    background: $green-background
+    padding: 0 0.5em 0 0.5em
 
 #section-c
-    background: #FFDC00
-    
+    background: $yellow-background
+    padding: 0 0.5em 0 0.5em
+
+#section-d
+    background: $yellow-background
+    padding: 0 0.5em 0 0.5em
+
 #main-footer
-    padding-top: 5em
+    padding-top: 2em
     padding-bottom: 1em
-    background: #FFDC00
+    background: $yellow-background
     color: #00000070
     font-size: 10px
     line-height: 10px
+    height: min-content
 
+.flex-box
+    display: flex
+    flex-flow: column
+    height: calc(100vh - 100px)
+
+.flex-item
+    flex: 90%
+
+.flex-footer
+    flex: auto
 

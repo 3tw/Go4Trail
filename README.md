@@ -1,2 +1,2 @@
-# Go4Trail
-Website for the Go 4 Trail running event
+#Go4Trail
+Website for  'Go 4 Trail' running event

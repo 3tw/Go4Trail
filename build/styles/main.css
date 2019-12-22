@@ -1,5 +1,20 @@
+@keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
+  height: 100%;
   margin: 0;
+}
+
+body {
   font-family: Arial, sans-serif;
   background: white;
   color: #333;
@@ -34,28 +49,14 @@ a {
   text-decoration: none;
 }
 
-.btn {
-  display: inline-block;
-  background: white;
-  color: #333;
-  text-decoration: 0;
-  padding: 0.5em 1em;
-  border: 1px solid #666;
-}
-
-.btn:hover {
-  background: blue;
-  colour: #333;
-}
-
 .home-icon {
-  color: #FFDC00;
+  color: #ffdd00;
   font-size: 1.6em;
   padding: 1em;
 }
 
 .menu-icon {
-  color: #FFDC00;
+  color: #ffdd00;
   font-size: 1.8em;
   padding: 1em;
   border: none;
@@ -67,29 +68,40 @@ a {
   height: 100%;
   width: 0%;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .menu-content {
   position: relative;
-  top: 25%;
+  top: 20%;
   width: 100%;
   padding-left: 0.5em;
 }
 
-.menu-content li {
+#dropdown {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: none;
+  font-size: 0.8em;
+  padding-left: 1.5em;
+  animation: fadeEffect 1.5s;
+}
+
+.menu-content li,
+.menu-content li ul li {
   padding: 1em;
   text-decoration: none;
   font-size: 1.4em;
   line-height: 0;
   text-align: left;
   display: block;
-  transitions: 0.3s;
+  transition: 0.3s;
 }
 
 #close-button {
@@ -98,10 +110,30 @@ a {
   padding-right: 1em;
   right: 0;
   font-size: 3em;
+  color: whitesmoke;
 }
 
-.menu-color {
+.menu-link {
   color: whitesmoke;
+  cursor: pointer;
+}
+
+.active {
+  display: block !important;
+}
+
+.read-more {
+  display: inline-block;
+  background: white;
+  color: #333;
+  text-decoration: 0;
+  padding: 0.5em 1em;
+  border: 1px solid #666;
+}
+
+.read-more:hover {
+  background: whitesmoke;
+  color: #333;
 }
 
 .logo-container {
@@ -116,11 +148,17 @@ a {
 }
 
 #navigation-bar {
-  background: #39cccccc;
+  background: #51b88b;
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: min-content;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100px;
+  position: sticky;
 }
 
 .home-container {
@@ -134,28 +172,96 @@ a {
 }
 
 #showcase {
-  background: #39cccccc;
+  background: white;
+  padding: 0 0.5em 0 0.5em;
 }
 
 #section-a {
   padding-bottom: 1.5em;
+  background: white;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.card-content {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #section-b {
-  background: #3d9770;
+  background: #51b88b;
+  padding: 0 0.5em 0 0.5em;
 }
 
 #section-c {
-  background: #FFDC00;
+  background: rgba(255, 221, 0, 0.7);
+  padding: 0 0.5em 0 0.5em;
+}
+
+#section-d {
+  background: rgba(255, 221, 0, 0.7);
+  padding: 0 0.5em 0 0.5em;
 }
 
 #main-footer {
-  padding-top: 5em;
+  padding-top: 2em;
   padding-bottom: 1em;
-  background: #FFDC00;
+  background: rgba(255, 221, 0, 0.7);
   color: #00000070;
   font-size: 10px;
   line-height: 10px;
+  height: min-content;
+}
+
+.flex-box {
+  display: flex;
+  flex-flow: column;
+  height: calc(100vh - 100px);
+}
+
+.flex-item {
+  flex: 90%;
+}
+
+.flex-footer {
+  flex: auto;
+}
+
+.contact-form {
+  width: inherit;
+  height: min-content;
+}
+
+.contact-form {
+  text-align: center;
+  padding: 0 2em 0 2em;
+}
+
+.contact-form > input,
+.contact-form > textarea,
+.contact-form > button {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: none;
+  width: 100%;
+  background-color: inherit;
+  margin-bottom: 0.3em;
+  border-bottom: 1px solid;
+}
+
+.contact-form > textarea {
+  resize: none;
+}
+
+.contact-form > button {
+  width: auto;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  background-color: #51b88b;
+  color: white;
+  border-bottom: 0;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=main.css.map */
