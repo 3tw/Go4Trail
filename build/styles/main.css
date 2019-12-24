@@ -162,12 +162,12 @@ a {
 }
 
 .home-container {
-  flex-basis: 70%;
-  text-align: left;
+  flex-basis: 20%;
+  text-align: center;
 }
 
 .menu-icon-container {
-  flex-basis: 30%;
+  flex-basis: 80%;
   text-align: right;
 }
 
@@ -226,6 +226,61 @@ a {
   flex: auto;
 }
 
+@media screen and (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .content-wrap,
+#section-a ul,
+#main-footer div {
+    grid-column: 2/4;
+  }
+
+  #section-a ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-a li {
+    width: 23%;
+  }
+
+  .flex-box {
+    display: block;
+  }
+
+  #menu {
+    height: min-content;
+    width: inherit;
+    position: relative;
+    z-index: 1;
+    background-color: inherit;
+    overflow-x: hidden;
+    transition: 0.5s;
+    flex-basis: 80%;
+    display: inline-flex;
+    overflow-y: hidden;
+  }
+
+  #menu ul {
+    display: inline-flex;
+    justify-content: space-around;
+    height: min-content;
+    padding-right: 5%;
+  }
+
+  #menu ul li {
+    height: min-content;
+  }
+
+  .menu-icon-container,
+#close-button,
+.hide {
+    display: none !important;
+  }
+}
 .contact-form {
   width: inherit;
   height: min-content;

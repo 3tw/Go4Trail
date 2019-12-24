@@ -7,7 +7,9 @@ Time spent on the project:
 18.12. 1h30
 19.12. 1h30
 20.12. 1h
-21.12.
+21.12. 1h30
+22.12. 2h
+24.12. 2h
 ---------------------
 > Contact form //
     > set colors --> Tim
@@ -17,5 +19,7 @@ Time spent on the project:
 > Other html files //
 > Home Button //
 > Containers for events
-> if menu selects open window do nothing just hide menu
-> Meta description
+> If menu selects open window do nothing just hide menu //
+> Meta description //
+> uskladiti imena tekov (!)
+> responsive site //
