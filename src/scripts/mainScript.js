@@ -31,15 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
     closeButton.addEventListener("click", closeMenu)
     racesButton.addEventListener("click", racesMenu)
 
+   
+
     //button listener
     document.addEventListener("click", function (e) {
         if (e.target.classList.contains("hide-menu")) {
             closeMenu();
         }
-    
-        //scroll back on top and close menu if on the same page
-
-    
+        else if (e.target.classList.contains("submit-button")) {
+            validateForm();
+        }
     });
 
     //clear input fields on reload
@@ -49,6 +50,5 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         
     };
-
 
 });
