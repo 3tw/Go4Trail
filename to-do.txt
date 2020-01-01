@@ -14,7 +14,7 @@ Time spent on the project:
 > Contact form //
     > set colors --> Tim
     > padding for text //
-    > working php
+    > working 3rdparty //
     > flexbox //
 > Other html files //
 > Home Button //
@@ -23,3 +23,4 @@ Time spent on the project:
 > Meta description //
 > uskladiti imena tekov (!)
 > responsive site //
+> picture slideshow on top
