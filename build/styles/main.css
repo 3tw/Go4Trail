@@ -9,6 +9,10 @@
     opacity: 1;
   }
 }
+html {
+  height: 100%;
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -89,7 +93,6 @@ a {
   position: relative;
   display: none;
   font-size: 0.8em;
-  padding-left: 1.5em;
   animation: fadeEffect 1.5s;
 }
 
@@ -97,9 +100,9 @@ a {
 .menu-content li ul li {
   padding: 1em;
   text-decoration: none;
-  font-size: 1.4em;
-  line-height: 0;
-  text-align: left;
+  font-size: 1.6em;
+  line-height: 0.4em;
+  text-align: center;
   display: block;
   transition: 0.3s;
 }
@@ -111,6 +114,7 @@ a {
   right: 0;
   font-size: 3em;
   color: whitesmoke;
+  cursor: pointer;
 }
 
 .menu-link {
@@ -120,6 +124,10 @@ a {
 
 .active {
   display: block !important;
+}
+
+button {
+  cursor: pointer;
 }
 
 .read-more {
@@ -147,8 +155,20 @@ a {
   padding: 0.2em;
 }
 
+.about p > a {
+  color: #559ba0;
+}
+
+.about p > a:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  padding: 1em 1em 0 1em;
+}
+
 #navigation-bar {
-  background: #51b88b;
+  background: #6bbfc5;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -157,29 +177,23 @@ a {
   right: 0;
   z-index: 100;
   width: 100%;
-  height: 100px;
+  height: 80px;
   position: sticky;
 }
 
 .home-container {
-  flex-basis: 20%;
+  flex-basis: 10%;
   text-align: center;
 }
 
 .menu-icon-container {
-  flex-basis: 80%;
+  flex-basis: 90%;
   text-align: right;
-}
-
-#showcase {
-  background: white;
-  padding: 0 0.5em 0 0.5em;
 }
 
 #section-a {
   padding-bottom: 1.5em;
   background: white;
-  padding: 0 0.5em 0 0.5em;
 }
 
 .card-content {
@@ -188,28 +202,25 @@ a {
 }
 
 #section-b {
-  background: #51b88b;
-  padding: 0 0.5em 0 0.5em;
+  background: whitesmoke;
 }
 
 #section-c {
-  background: rgba(255, 221, 0, 0.7);
-  padding: 0 0.5em 0 0.5em;
+  background: white;
 }
 
 #section-d {
-  background: rgba(255, 221, 0, 0.7);
-  padding: 0 0.5em 0 0.5em;
+  background: white;
 }
 
 #main-footer {
   padding-top: 2em;
   padding-bottom: 1em;
-  background: rgba(255, 221, 0, 0.7);
+  background: white;
   color: #00000070;
-  font-size: 10px;
-  line-height: 10px;
+  line-height: 2em;
   height: min-content;
+  font-size: 10px;
 }
 
 .flex-box {
@@ -238,6 +249,18 @@ a {
     grid-column: 2/4;
   }
 
+  #navigation-bar {
+    height: 100px;
+  }
+
+  .showcase-image {
+    height: 350px;
+  }
+
+  #section-a {
+    padding: 1em;
+  }
+
   #section-a ul {
     display: flex;
     justify-content: space-around;
@@ -247,19 +270,15 @@ a {
     width: 23%;
   }
 
-  .flex-box {
-    display: block;
-  }
-
   #menu {
-    height: min-content;
+    height: initial;
     width: inherit;
     position: relative;
     z-index: 1;
     background-color: inherit;
     overflow-x: hidden;
     transition: 0.5s;
-    flex-basis: 80%;
+    flex-basis: 90%;
     display: inline-flex;
     overflow-y: hidden;
   }
@@ -273,6 +292,8 @@ a {
 
   #menu ul li {
     height: min-content;
+    padding: 0.5em;
+    font-size: 1.4em;
   }
 
   .menu-icon-container,
@@ -281,19 +302,19 @@ a {
     display: none !important;
   }
 }
-.contact-form {
+#contact-form {
   width: inherit;
   height: min-content;
 }
 
-.contact-form {
+#contact-form {
   text-align: center;
   padding: 0 2em 0 2em;
 }
 
-.contact-form > input,
-.contact-form > textarea,
-.contact-form > button {
+#contact-form > input,
+#contact-form > textarea,
+#contact-form > button {
   text-decoration: none;
   font-size: 1.1em;
   font-family: Arial, sans-serif;
@@ -305,18 +326,35 @@ a {
   border-bottom: 1px solid;
 }
 
-.contact-form > textarea {
+#contact-form > textarea {
   resize: none;
 }
 
-.contact-form > button {
+#contact-form > button {
   width: auto;
   padding: 0.5em;
   margin-top: 0.5em;
-  background-color: #51b88b;
+  background-color: #6bbfc5;
   color: white;
   border-bottom: 0;
   border-radius: 3px;
+}
+
+.showcase-image {
+  position: relative;
+}
+
+.showcase-image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showcase-image h1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

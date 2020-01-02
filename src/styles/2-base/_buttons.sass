@@ -35,16 +35,15 @@
     position: relative
     display: none
     font-size: 0.8em
-    padding-left: 1.5em
     animation: fadeEffect 1.5s
 
 .menu-content li,
 .menu-content li ul li
     padding: 1em
     text-decoration: none
-    font-size: 1.4em
-    line-height: 0
-    text-align: left
+    font-size: 1.6em
+    line-height: 0.4em
+    text-align: center
     display: block
     transition: 0.3s
 
@@ -55,6 +54,7 @@
     right: 0
     font-size: 3em
     color: whitesmoke
+    cursor: pointer
 
 .menu-link
     color: whitesmoke
@@ -62,6 +62,9 @@
 
 .active
     display: block !important
+
+button
+    cursor: pointer
 
 //read more buttons
 .read-more
@@ -85,3 +88,10 @@
     color: black
     font-size: 1.8em
     padding: 0.2em
+
+// links
+.about p > a
+    color: #559ba0
+
+.about p > a:hover
+    text-decoration: underline
