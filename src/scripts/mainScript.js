@@ -1,4 +1,4 @@
-//check if doc is loaded
+// check if doc is loaded
 $(document).ready(function () {    
     let menuButton = document.getElementById("menu-button");
     let closeButton = document.getElementById("close-button");
@@ -8,12 +8,12 @@ $(document).ready(function () {
 
     let inputFields = document.querySelectorAll(".input-field");
 
-    let form = document.getElementById("contact-form");
+    // old validation
     let name = document.getElementById("name");
     let email = document.getElementById("email");
     let message = document.getElementById("message")
 
-    //open & close menu
+    // open & close menu
     function openMenu() {
         document.getElementById("menu").style.width = "100%";
     };
@@ -30,17 +30,7 @@ $(document).ready(function () {
         }
     };
 
-    //clear input fields on reload
-    window.onload = function() {
-        inputFields.forEach (function(field) {
-            field.value = "";
-        });
-        
-    };
-
-    //validate form
-    function validateForm() {
-        // trim to remove the whitespaces
+    function validate() {
         let nameValue = name.value.trim();
         let emailValue = email.value.trim();
         let messageValue = message.value.trim();
@@ -78,14 +68,10 @@ $(document).ready(function () {
     }
 
 
-    //button listeners
+    // button listeners
     menuButton.addEventListener("click", openMenu);
     closeButton.addEventListener("click", closeMenu);
     racesButton.addEventListener("click", racesMenu);
-    //form.addEventListener('submit', e => {
-      //  e.preventDefault();
-        //validateForm();
-    //});    
 
     // scroll to races
     let width = $(window).width();
@@ -106,15 +92,10 @@ $(document).ready(function () {
         };
     });
 
-    //navigation bar color change
+    // navigation bar color change
     $('#showcase').on('scroll', function() {
         if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
             alert('end reached');
         }
     })
-
-
-   
-
 });
-
