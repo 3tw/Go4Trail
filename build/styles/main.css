@@ -36,6 +36,8 @@ img {
 h1, h2, h3 {
   margin: 0;
   padding: 1em 0;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
 }
 
 p {
@@ -54,13 +56,14 @@ a {
 }
 
 .home-icon {
-  color: #ffdd00;
-  font-size: 1.6em;
+  color: #FFBB94;
+  font-size: 1.7em;
   padding: 1em;
+  margin-left: 0.5em;
 }
 
 .menu-icon {
-  color: #ffdd00;
+  color: #FFBB94;
   font-size: 1.8em;
   padding: 1em;
   border: none;
@@ -100,11 +103,13 @@ a {
 .menu-content li ul li {
   padding: 1em;
   text-decoration: none;
-  font-size: 1.6em;
+  font-size: 1.7em;
   line-height: 0.4em;
   text-align: center;
   display: block;
   transition: 0.3s;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
 }
 
 #close-button {
@@ -168,7 +173,7 @@ button {
 }
 
 #navigation-bar {
-  background: #6bbfc5;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -178,7 +183,12 @@ button {
   z-index: 100;
   width: 100%;
   height: 80px;
-  position: sticky;
+  position: fixed;
+}
+
+.sticky-bar {
+  position: sticky !important;
+  background-color: #1C9999 !important;
 }
 
 .home-container {
@@ -249,14 +259,6 @@ button {
     grid-column: 2/4;
   }
 
-  #navigation-bar {
-    height: 100px;
-  }
-
-  .showcase-image {
-    height: 350px;
-  }
-
   #section-a {
     padding: 1em;
   }
@@ -275,12 +277,12 @@ button {
     width: inherit;
     position: relative;
     z-index: 1;
-    background-color: inherit;
     overflow-x: hidden;
     transition: 0.5s;
     flex-basis: 90%;
     display: inline-flex;
     overflow-y: hidden;
+    background: transparent;
   }
 
   #menu ul {
@@ -293,7 +295,7 @@ button {
   #menu ul li {
     height: min-content;
     padding: 0.5em;
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
 
   .menu-icon-container,
@@ -334,7 +336,7 @@ button {
   width: auto;
   padding: 0.5em;
   margin-top: 0.5em;
-  background-color: #6bbfc5;
+  background-color: #1C9999;
   color: white;
   border-bottom: 0;
   border-radius: 3px;
@@ -342,6 +344,7 @@ button {
 
 .showcase-image {
   position: relative;
+  height: 50vh;
 }
 
 .showcase-image img {

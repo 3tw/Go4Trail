@@ -11,6 +11,7 @@ Time spent on the project:
 22.12. 2h
 24.12. 2h
 2.1. 5h
+3.1.
 ---------------------
 > Contact form //
     > set colors --> Tim
@@ -22,7 +23,7 @@ Time spent on the project:
 > Containers for events
 > If menu selects open window do nothing just hide menu //
 > Meta description //
-> uskladiti imena tekov (!)
+> uskladiti imena tekov (!) //
     >> Go1V - 12 km
     Go3V - 28 km
     Počasna a drzna ultra - 58km

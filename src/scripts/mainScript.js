@@ -1,5 +1,5 @@
 //check if doc is loaded
-document.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function () {    
     let menuButton = document.getElementById("menu-button");
     let closeButton = document.getElementById("close-button");
 
@@ -8,7 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let inputFields = document.querySelectorAll(".input-field");
 
-    let submitButton = document.getElementById("submit-button");
+    let form = document.getElementById("contact-form");
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message")
 
     //open & close menu
     function openMenu() {
@@ -35,35 +38,83 @@ document.addEventListener('DOMContentLoaded', function () {
         
     };
 
-    // validate form
+    //validate form
+    function validateForm() {
+        // trim to remove the whitespaces
+        let nameValue = name.value.trim();
+        let emailValue = email.value.trim();
+        let messageValue = message.value.trim();
+        
+        if (nameValue === '') {
+            error();
+        } else {
+            success()
+        }
+        
+        if (emailValue === '') {
+            error()
+        } else if (!isEmail(emailValue)) {
+            error()
+        } else {
+            success()
+        }
+        
+        if (messageValue === '') {
+            error()
+        } else {
+            success() 
+        }
+    }
+
+    function error() {
+        return false
+    }
+    function success(){
+        return true
+    }
+        
+    function isEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    }
 
 
     //button listeners
     menuButton.addEventListener("click", openMenu);
     closeButton.addEventListener("click", closeMenu);
     racesButton.addEventListener("click", racesMenu);
-    //submitButton.addEventListener("click", validateForm);
-});
+    //form.addEventListener('submit', e => {
+      //  e.preventDefault();
+        //validateForm();
+    //});    
 
-
-// jQuery
-$(document).ready(function () {
+    // scroll to races
     let width = $(window).width();
     $(window).resize(function() {
         width = $(window).width()
     });    
 
     $('#races-button').click(function(){    
-        // scroll to races
         if (width >= 700) { 
             // index.html
             if (window.location.href == "http://127.0.0.1:5500/build/index.html") {
-                $('html, body').animate({scrollTop:$('#section-a').position().top-95}, 'slow');
+                $('html, body').animate({scrollTop:$('#section-a').position().top-80}, 'slow');
             }
             // non-index pages
+            // ??? figure out
+
+
         };
     });
 
-    //validate form
+    //navigation bar color change
+    $('#showcase').on('scroll', function() {
+        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+            alert('end reached');
+        }
+    })
+
+
+   
 
 });
+
