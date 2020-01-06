@@ -30,6 +30,25 @@ $(document).ready(function () {
         }
     };
 
+<<<<<<< HEAD
+=======
+    menuButton.addEventListener("click", openMenu)
+    closeButton.addEventListener("click", closeMenu)
+    racesButton.addEventListener("click", racesMenu)
+
+   
+
+    //button listener
+    document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("hide-menu")) {
+            closeMenu();
+        }
+        else if (e.target.classList.contains("submit-button")) {
+            validateForm();
+        }
+    });
+
+>>>>>>> 12de7e8c9c105a3474e197931595ba20c8b61ebc
     //clear input fields on reload
     window.onload = function() {
         inputFields.forEach (function(field) {
@@ -38,6 +57,7 @@ $(document).ready(function () {
         
     };
 
+<<<<<<< HEAD
     //validate form
     function validateForm() {
         // trim to remove the whitespaces
@@ -118,3 +138,6 @@ $(document).ready(function () {
 
 });
 
+=======
+});
+>>>>>>> 12de7e8c9c105a3474e197931595ba20c8b61ebc
