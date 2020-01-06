@@ -11,16 +11,16 @@ Time spent on the project:
 22.12. 2h
 24.12. 2h
 2.1. 5h
-3.1.
+3.1. 4h
+4.1. 4h
 ---------------------
 > Contact form //
-    > set colors --> Tim
+    > set colors --> Tim //
     > padding for text //
     > working 3rdparty //
     > flexbox //
 > Other html files //
 > Home Button //
-> Containers for events
 > If menu selects open window do nothing just hide menu //
 > Meta description //
 > uskladiti imena tekov (!) //
@@ -29,3 +29,10 @@ Time spent on the project:
     Počasna a drzna ultra - 58km
 > responsive site //
 > picture slideshow on top
+
+> enable races dropdown menu for other pages (zbriši link in ga dodaj pri straneh večjih od 700px z js)
+
+> Containers for events !!!
+> navigation bar change colors
+> input fields red boarder (put input inside <div>)
+
