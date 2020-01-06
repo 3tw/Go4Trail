@@ -1,6 +1,7 @@
 .DS_Store
 .git
 <<<<<<< HEAD
+<<<<<<< HEAD
 .gitignore
 .vscode
 to-do.txt
@@ -8,3 +9,7 @@ to-do.txt
 .vscode
 to-do.txt
 >>>>>>> 12de7e8c9c105a3474e197931595ba20c8b61ebc
+=======
+.vscode
+to-do.txt
+>>>>>>> 6391098a7009ad83a3d9ad86f06674351fa75a18
