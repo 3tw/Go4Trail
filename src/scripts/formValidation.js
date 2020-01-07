@@ -42,7 +42,7 @@ $(document).ready(function () {
         messages: {
             name: "",
             email: "",
-            message: "",
+            message: "hj",
           }
     });
 

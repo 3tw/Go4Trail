@@ -6,11 +6,6 @@ $(document).ready(function () {
     let racesButton = document.getElementById("races-button");
     let dropdownMenu = document.getElementById("dropdown");
 
-    // old validation
-    let name = document.getElementById("name");
-    let email = document.getElementById("email");
-    let message = document.getElementById("message")
-
     // open & close menu
     function openMenu() {
         document.getElementById("menu").style.width = "100%";
@@ -18,7 +13,6 @@ $(document).ready(function () {
     function closeMenu() {
         document.getElementById("menu").style.width = "0"
     }
-
     function racesMenu() {
         if (dropdownMenu.classList.contains("active")) {
             dropdownMenu.classList.remove("active")    
@@ -47,11 +41,4 @@ $(document).ready(function () {
             }
         };
     });
-
-    // navigation bar color change
-    $('#showcase').on('scroll', function() {
-        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-            alert('end reached');
-        }
-    })
 });

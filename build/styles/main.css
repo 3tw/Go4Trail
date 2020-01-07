@@ -186,6 +186,11 @@ button {
   position: absolute;
 }
 
+.sticky-bar {
+  position: initial !important;
+  background-color: #1C9999 !important;
+}
+
 .home-container {
   flex-basis: 10%;
   text-align: center;
