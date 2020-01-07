@@ -2,19 +2,6 @@
 $(document).ready(function () {  
     let $form = $("#contact-form");
 
-    // highlight inputs
-    $.validator.setDefaults({
-        errorClass: 'help-block',
-        highlight: function(element) {
-          $(element)
-            .addClass('has-error');
-        },
-        unhighlight: function(element) {
-          $(element)
-            .removeClass('has-error');
-        }
-    })
-
     // validate form
     $form.validate({
         rules: {
@@ -24,7 +11,6 @@ $(document).ready(function () {
                     return $.trim(value);
                 }
             },
-            email: "required",
             email: {
                 required: true,
                 email: true,
@@ -42,10 +28,15 @@ $(document).ready(function () {
         messages: {
             name: "",
             email: "",
-            message: "hj",
-          }
+            message: "",
+        },
+        highlight: function (element) {
+            $(element).css("border-color", "red")
+        },
+        unhighlight: function (element) {
+            $(element).css("border-color", "black")
+        }
     });
-
 });
 
 // clear input fields
@@ -53,4 +44,9 @@ window.onload = function() {
     $(".input-field").each(function () {
         $(this).val("");
     })
+}
+
+//prevent form resubmission
+if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
 }

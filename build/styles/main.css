@@ -14,17 +14,14 @@ html {
 }
 
 body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
   font-family: Arial, sans-serif;
   background: white;
   color: #333;
   font-size: 1.1em;
-  line-height: 1.5;
+  line-height: 1.5em;
   text-align: center;
+  height: 100%;
+  margin: 0;
 }
 
 img {
@@ -147,6 +144,18 @@ button {
 .read-more:hover {
   background: whitesmoke;
   color: #333;
+}
+
+#submit-button {
+  background-image: #FFBB94;
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+
+#submit-button:hover {
+  background-size: 100% 5px, auto;
 }
 
 .logo-container {
@@ -303,20 +312,22 @@ button {
 .hide {
     display: none !important;
   }
+
+  #contact-form {
+    line-height: 1.5em;
+  }
 }
 #contact-form {
   width: inherit;
   height: min-content;
-}
-
-#contact-form {
   text-align: center;
   padding: 0 2em 0 2em;
+  line-height: 2em;
 }
 
 #contact-form > input,
 #contact-form > textarea,
-#contact-form > button {
+#submit-button {
   text-decoration: none;
   font-size: 1.1em;
   font-family: Arial, sans-serif;
@@ -332,7 +343,7 @@ button {
   resize: none;
 }
 
-#contact-form > button {
+#submit-button {
   width: auto;
   padding: 0.5em;
   margin-top: 0.5em;
