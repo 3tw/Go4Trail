@@ -3,20 +3,31 @@
         display: grid
         grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr
 
+    .image-grid
+        display: grid
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr
+        grid-template-rows: auto auto
+        grid-template-areas: ". race-1 race-2" ". race-3 race-4"
+        grid-gap: 1em
+
+    .image-grid li
+        margin: 0em !important
+
+    #race-1
+        grid-area: race-1
+    #race-2
+        grid-area: race-2
+    #race-3
+        grid-area: race-3
+    #race-4
+        grid-area: race-4
+
     .content-wrap,
-    #section-a ul,
     #main-footer div
         grid-column: 2/4
 
     #section-a
         padding: 1em
-    
-    #section-a ul
-        display: flex
-        justify-content: space-around
-
-    #section-a li
-        width: 23%
 
     #menu
         height: initial
@@ -48,3 +59,14 @@
 
     #contact-form
         line-height: 1.5em
+        
+@media screen and (min-width: 1200px)
+    .image-grid
+        display: grid
+        grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr
+        grid-template-rows: auto
+        grid-template-areas: ". race-1 race-2 race-3 race-4 ."
+        grid-gap: 1em
+
+    .image-grid li
+        margin: 0em !important

@@ -140,16 +140,16 @@ button {
 
 .read-more {
   display: inline-block;
-  background: white;
-  color: #333;
   text-decoration: 0;
+  background: #87c5be;
+  color: white;
   padding: 0.5em 1em;
-  border: 1px solid #666;
 }
 
-.read-more:hover {
-  background: whitesmoke;
-  color: #333;
+.read-more:hover,
+.read-more:focus {
+  color: #87c5be;
+  background: #87c5be40;
 }
 
 .logo-container {
@@ -164,7 +164,7 @@ button {
 }
 
 .about p > a {
-  color: #559ba0;
+  color: #87c5be;
 }
 
 .about p > a:hover {
@@ -191,7 +191,7 @@ button {
 
 .sticky-bar {
   position: initial !important;
-  background-color: #1C9999 !important;
+  background-color: #87c5be !important;
 }
 
 .home-container {
@@ -204,14 +204,22 @@ button {
   text-align: right;
 }
 
+#headline {
+  background: white;
+  padding: 0 1em 0 1em;
+  height: min-content;
+}
+
 #section-a {
-  padding-bottom: 1.5em;
   background: white;
 }
 
-.card-content {
-  padding-top: 1em;
-  padding-bottom: 1em;
+#section-a ul li {
+  margin-bottom: 1em;
+}
+
+#section-a ul li h2 {
+  padding-bottom: 0;
 }
 
 #section-b {
@@ -256,23 +264,41 @@ button {
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
   }
 
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: ". race-1 race-2" ". race-3 race-4";
+    grid-gap: 1em;
+  }
+
+  .image-grid li {
+    margin: 0em !important;
+  }
+
+  #race-1 {
+    grid-area: race-1;
+  }
+
+  #race-2 {
+    grid-area: race-2;
+  }
+
+  #race-3 {
+    grid-area: race-3;
+  }
+
+  #race-4 {
+    grid-area: race-4;
+  }
+
   .content-wrap,
-#section-a ul,
 #main-footer div {
     grid-column: 2/4;
   }
 
   #section-a {
     padding: 1em;
-  }
-
-  #section-a ul {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #section-a li {
-    width: 23%;
   }
 
   #menu {
@@ -311,6 +337,19 @@ button {
     line-height: 1.5em;
   }
 }
+@media screen and (min-width: 1200px) {
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". race-1 race-2 race-3 race-4 .";
+    grid-gap: 1em;
+  }
+
+  .image-grid li {
+    margin: 0em !important;
+  }
+}
 #contact-form {
   width: inherit;
   height: min-content;
@@ -341,7 +380,7 @@ button {
   width: auto;
   padding: 0.5em;
   margin-top: 0.5em;
-  background-color: #1C9999;
+  background-color: #87c5be;
   color: white;
   border-bottom: 0;
   border-radius: 3px;
@@ -353,7 +392,7 @@ button {
 
 .showcase-image {
   position: relative;
-  height: 50vh;
+  height: 45vh;
 }
 
 .showcase-image img {
@@ -368,6 +407,19 @@ button {
   position: absolute;
   width: 100%;
   top: 0;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-content h2 {
+  color: #61b6ac;
+}
+
+.image-grid li {
+  background: whitesmoke;
+  margin: 0 1em 0 1em;
 }
 
 /*# sourceMappingURL=main.css.map */

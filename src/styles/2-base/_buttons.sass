@@ -73,15 +73,15 @@ button
 //read more buttons
 .read-more
     display: inline-block
-    background: white
-    color: #333
     text-decoration: 0
+    background: $green
+    color: white
     padding: 0.5em 1em
-    border: 1px solid #666
 
-.read-more:hover
-    background: whitesmoke
-    color: #333
+.read-more:hover,
+.read-more:focus
+    color: $green
+    background: $green-transparent
 
 //instagram and fb
 .logo-container
@@ -95,7 +95,7 @@ button
 
 // links
 .about p > a
-    color: #559ba0
+    color: $green
 
 .about p > a:hover
     text-decoration: underline
