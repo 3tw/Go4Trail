@@ -1,10 +1,44 @@
 // check if doc is loaded
-$(document).ready(function () {    
+$(document).ready(function () { 
     let menuButton = document.getElementById("menu-button");
     let closeButton = document.getElementById("close-button");
 
     let racesButton = document.getElementById("races-button");
     let dropdownMenu = document.getElementById("dropdown");
+
+    let smallScreen = window.matchMedia("(max-width: 700px)");
+   
+    // scroll on top
+    $(this).scrollTop(0);
+
+    //media queries
+    if (matchMedia){
+        smallScreen.addListener(shiftHeadline);
+        shiftHeadline(smallScreen);
+    };
+
+    // manage headlines
+    function shiftHeadline(smallScreen) {
+        let $smallHeadline = $(".small-headline");
+        let $bigHeadline = $(".big-headline");
+        let $arrow = $(".arrow");
+        if (smallScreen.matches) {
+            $smallHeadline.addClass("active")
+            $bigHeadline.removeClass("active");
+            $arrow.removeClass("active");
+
+        }
+        else {
+            $smallHeadline.removeClass("active")
+            $bigHeadline.addClass("active");
+            $arrow.addClass("active");
+    }
+    };
+
+    // button listeners
+    menuButton.addEventListener("click", openMenu);
+    closeButton.addEventListener("click", closeMenu);
+    racesButton.addEventListener("click", racesMenu);
 
     // open & close menu
     function openMenu() {
@@ -22,24 +56,19 @@ $(document).ready(function () {
         }
     };
 
-    // button listeners
-    menuButton.addEventListener("click", openMenu);
-    closeButton.addEventListener("click", closeMenu);
-    racesButton.addEventListener("click", racesMenu);
-
     // scroll to races
     let width = $(window).width();
     $(window).resize(function() {
         width = $(window).width()
-    });    
+    });
 
-    $("#races-button").click(function(){    
+    $("#races-button, .arrow").click(function(){    
         if (width >= 700) { 
-            // index.html
+            // for index.html
             if (window.location.href == "http://127.0.0.1:5500/build/index.html") {
-                $("html, body").animate({scrollTop:$("#headline").position().top}, "slow");
+                $("html, body").animate({scrollTop:$("#section-a").position().top}, "slow");
             }
         };
     });
-
+    
 });
