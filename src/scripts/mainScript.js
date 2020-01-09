@@ -7,9 +7,6 @@ $(document).ready(function () {
     let dropdownMenu = document.getElementById("dropdown");
 
     let smallScreen = window.matchMedia("(max-width: 700px)");
-   
-    // scroll on top
-    $(this).scrollTop(0);
 
     //media queries
     if (matchMedia){
@@ -57,18 +54,19 @@ $(document).ready(function () {
     };
 
     // scroll to races
-    let width = $(window).width();
+    let $width = $(window).width();
     $(window).resize(function() {
-        width = $(window).width()
+        $width = $(window).width()
     });
 
     $("#races-button, .arrow").click(function(){    
-        if (width >= 700) { 
+        if ($width >= 700) { 
             // for index.html
-            if (window.location.href == "http://127.0.0.1:5500/build/index.html") {
+            if (window.location.href == "http://127.0.0.1:5500/build/index.html" ||
+                window.location.href == "http://127.0.0.1:5500/build/index.html#section-a") {
                 $("html, body").animate({scrollTop:$("#section-a").position().top}, "slow");
             }
         };
     });
-    
+
 });
