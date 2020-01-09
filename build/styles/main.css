@@ -130,8 +130,8 @@ a {
   cursor: pointer;
 }
 
-.active {
-  display: block !important;
+#dropdown.active {
+  display: block;
 }
 
 button {
@@ -189,9 +189,9 @@ button {
   position: absolute;
 }
 
-.sticky-bar {
-  position: initial !important;
-  background-color: #87c5be !important;
+#navigation-bar.sticky-bar {
+  position: initial;
+  background-color: #87c5be;
 }
 
 .home-container {
@@ -258,98 +258,6 @@ button {
   flex: auto;
 }
 
-@media screen and (min-width: 700px) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-  }
-
-  .image-grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: ". race-1 race-2" ". race-3 race-4";
-    grid-gap: 1em;
-  }
-
-  .image-grid li {
-    margin: 0em !important;
-  }
-
-  #race-1 {
-    grid-area: race-1;
-  }
-
-  #race-2 {
-    grid-area: race-2;
-  }
-
-  #race-3 {
-    grid-area: race-3;
-  }
-
-  #race-4 {
-    grid-area: race-4;
-  }
-
-  .content-wrap,
-#main-footer div {
-    grid-column: 2/4;
-  }
-
-  #section-a {
-    padding: 1em;
-  }
-
-  #menu {
-    height: initial;
-    width: inherit;
-    position: relative;
-    z-index: 1;
-    overflow-x: hidden;
-    transition: 0.5s;
-    flex-basis: 90%;
-    display: inline-flex;
-    overflow-y: hidden;
-    background: transparent;
-  }
-
-  #menu ul {
-    display: inline-flex;
-    justify-content: space-around;
-    height: min-content;
-    padding-right: 5%;
-  }
-
-  #menu ul li {
-    height: min-content;
-    padding: 0.5em;
-    font-size: 1.5em;
-  }
-
-  .menu-icon-container,
-#close-button,
-.hide {
-    display: none !important;
-  }
-
-  #contact-form {
-    line-height: 1.5em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .image-grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: ". race-1 race-2 race-3 race-4 .";
-    grid-gap: 1em;
-  }
-
-  .image-grid li {
-    margin: 0em !important;
-  }
-}
 #contact-form {
   width: inherit;
   height: min-content;
@@ -403,12 +311,6 @@ button {
   object-position: bottom;
 }
 
-.showcase-image h1 {
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
-
 .card-content {
   padding: 1em;
 }
@@ -420,6 +322,109 @@ button {
 .image-grid li {
   background: whitesmoke;
   margin: 0 1em 0 1em;
+}
+
+@media screen and (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: ". race-1 race-2" ". race-3 race-4";
+    grid-gap: 1em;
+  }
+
+  .image-grid li {
+    margin: 0em;
+  }
+
+  #race-1 {
+    grid-area: race-1;
+  }
+
+  #race-2 {
+    grid-area: race-2;
+  }
+
+  #race-3 {
+    grid-area: race-3;
+  }
+
+  #race-4 {
+    grid-area: race-4;
+  }
+
+  .content-wrap,
+#main-footer div {
+    grid-column: 2/4;
+  }
+
+  .showcase-image {
+    height: 100vh;
+  }
+
+  .showcase-image h1 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+
+  #section-a {
+    padding: 1em;
+  }
+
+  #menu {
+    height: initial;
+    width: inherit;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    flex-basis: 90%;
+    display: inline-flex;
+    overflow-y: hidden;
+    background: transparent;
+  }
+
+  #menu ul {
+    display: inline-flex;
+    justify-content: space-around;
+    height: min-content;
+    padding-right: 5%;
+  }
+
+  #menu ul li {
+    height: min-content;
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+
+  #navigation-bar .menu-icon-container,
+#menu #close-button,
+#dropdown.hide {
+    display: none;
+  }
+
+  #contact-form {
+    line-height: 1.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". race-1 race-2 race-3 race-4 .";
+    grid-gap: 1em;
+  }
+
+  .image-grid li {
+    margin: 0em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
