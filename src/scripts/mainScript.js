@@ -33,12 +33,13 @@ $(document).ready(function () {
         width = $(window).width()
     });    
 
-    $('#races-button').click(function(){    
+    $("#races-button").click(function(){    
         if (width >= 700) { 
             // index.html
             if (window.location.href == "http://127.0.0.1:5500/build/index.html") {
-                $('html, body').animate({scrollTop:$('#headline').position().top}, 'slow');
+                $("html, body").animate({scrollTop:$("#headline").position().top}, "slow");
             }
         };
     });
+
 });
