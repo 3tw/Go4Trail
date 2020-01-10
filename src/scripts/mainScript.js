@@ -65,8 +65,10 @@ $(document).ready(function () {
             if (window.location.href == "http://127.0.0.1:5500/build/index.html" ||
                 window.location.href == "http://127.0.0.1:5500/build/index.html#section-a") {
                 $("html, body").animate({scrollTop:$("#section-a").position().top}, "slow");
-            }
-        };
+            } 
+        } else {
+            $("#races-button").attr("href", "javascript:void(0)");
+        }
     });
 
 });
