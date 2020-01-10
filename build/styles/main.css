@@ -19,10 +19,16 @@
   }
 }
 @font-face {
-  font-family: Roboto, sans-serif;
+  font-family: "GilroyThin";
+  src: url("fonts/gilroy-light-webfont.woff") format("woof");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Lato", sans-serif;
+  font-family: "GilroyExtraBold";
+  src: url("fonts/gilroy-extrabold-webfont.woff") format("woof");
+  font-weight: normal;
+  font-style: normal;
 }
 html {
   height: 100%;
@@ -32,8 +38,8 @@ body {
   font-family: "Lato", sans-serif;
   background: white;
   color: #333;
-  font-size: 1.1em;
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.4em;
   text-align: center;
   height: 100%;
   margin: 0;
@@ -72,11 +78,19 @@ a {
   font-size: 1.7em;
   padding: 1em;
   margin-left: 0.5em;
+  display: none;
+}
+
+#logo {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 2em;
+  padding: 1em 0 1em 0;
+  color: whitesmoke;
 }
 
 .menu-icon {
-  color: #FFBB94;
-  font-size: 1.8em;
+  color: whitesmoke;
+  font-size: 2em;
   padding: 1em;
   border: none;
   background-color: inherit;
@@ -120,7 +134,7 @@ a {
   text-align: center;
   display: block;
   transition: 0.3s;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: lighter;
 }
 
@@ -247,7 +261,9 @@ button {
 
 .home-container {
   flex-basis: 10%;
-  text-align: center;
+  height: 100%;
+  display: inline-flex;
+  padding-left: 5%;
 }
 
 .menu-icon-container {
@@ -373,7 +389,7 @@ button {
   bottom: 40%;
   color: whitesmoke;
   font-size: 1.5em;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.1em;
   font-weight: lighter;
   background-color: rgba(0, 0, 0, 0.3);
@@ -461,13 +477,13 @@ button {
     display: inline-flex;
     justify-content: space-around;
     height: min-content;
-    padding-right: 5%;
+    padding-right: 3%;
   }
 
   #menu ul li {
     height: min-content;
     padding: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   #navigation-bar .menu-icon-container,
