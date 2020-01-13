@@ -36,7 +36,6 @@ $(document).ready(function () {
     // button listeners
     menuButton.addEventListener("click", openMenu);
     closeButton.addEventListener("click", closeMenu);
-    racesButton.addEventListener("click", racesMenu);
 
     // open & close menu
     function openMenu() {
