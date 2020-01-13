@@ -18,24 +18,12 @@
     transform: translate(-10px, -10px);
   }
 }
-@font-face {
-  font-family: "GilroyThin";
-  src: url("fonts/gilroy-light-webfont.woff") format("woof");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "GilroyExtraBold";
-  src: url("fonts/gilroy-extrabold-webfont.woff") format("woof");
-  font-weight: normal;
-  font-style: normal;
-}
 html {
   height: 100%;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: white;
   color: #333;
   font-size: 1em;
@@ -54,7 +42,7 @@ img {
 h1, h2, h3 {
   margin: 0;
   padding: 1em 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
 }
 
@@ -370,7 +358,7 @@ button {
 
 .showcase-image {
   position: relative;
-  height: 50vh;
+  height: 45vh;
 }
 
 .showcase-image img {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,18 @@
     <!-- styles -->
     <link rel="stylesheet" href="/build/styles/main.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Martel+Sans:800&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <!--Navigation bar-->
     <div id="navigation-bar" class="sticky-bar">
         <!--add home button on the left-->
         <div class="home-container">
-            <a href="/build/en/index.html" id="logo">Go4trail</a>        
+            <a href="/build/en/index.html" id="logo">Go4trail</a>
         </div>
         <div class="menu-icon-container">
             <button class="menu-icon" data-target="menu">
@@ -33,16 +35,12 @@
 
             <ul class="menu-content">
                 <li><a href="faq.html" class="menu-link">FAQ</a></li>
-                <li class=""><a href="/build/en/index.html#section-a" class="menu-link" id="races-button">Races</a></li>
-                <ul id="dropdown" class="hide">
-                    <li class="hide"><a href="race-go.html" class="menu-link">Gorica Race</a></li>
-                    <li class="hide"><a href="go1v-12km.html" class="menu-link">Go1V</a></li>
-                    <li class="hide"><a href="go3v-28km.html" class="menu-link">Go3V</a></li>
-                    <li class="hide"><a href="ultra-58km.html" class="menu-link">Počasna a drzna Ultra </a></li>
-                </ul>
-                <li><a href="https://sportotime.com/slv/dogodek/964" target="_blank" rel="noopener noreferrer" class="menu-link">Enroll</a></li>
+                <li class=""><a href="races/index.html" class="menu-link" id="races-button">Races</a></li>
+                <li><a href="https://sportotime.com/slv/dogodek/964" target="_blank" rel="noopener noreferrer"
+                        class="menu-link">Enroll</a></li>
                 <li><a href="about.html" class="menu-link">About</a></li>
                 <li><a href="contact-us.html" class="menu-link">Contact us</a></li>
+                <li><a href="/build/sl/kontakt.html" class="language-switch menu-link">SI <i class="fas fa-globe"></i></a></li>
             </ul>
         </div>
     </div>
@@ -52,16 +50,17 @@
         <section id="section-c" class="grid flex-item">
             <div class="content-wrap">
                 <h2 class="content-title">Ask us anything!</h2>
-                <form id="contact-form" action="https://getform.io/f/80864511-72cb-4a68-99ef-a2fef0de680a" method="POST">
+                <form id="contact-form" action="https://getform.io/f/80864511-72cb-4a68-99ef-a2fef0de680a"
+                    method="POST">
                     <input type="text" name="name" id="name" placeholder="Full name" class="input-field">
                     <input type="email" name="email" id="email" placeholder="Your e-mail" class="input-field">
                     <input type="text" name="subject" id="subjcet" placeholder="Subject" class="input-field">
                     <textarea name="message" id="message" rows=8 placeholder="Message" class="input-field"></textarea>
                     <button type=submit id="submit-button">Send your message</button>
                 </form>
-            </div>  
+            </div>
         </section>
-        
+
         <!--Footer-->
         <div class="logo-container">
             <a href="javascript:void(0);" class="logo-icon" data-target="menu">
@@ -81,4 +80,5 @@
     <script type="text/javascript" src="/src/scripts/formValidation.js"></script>
 
 </body>
+
 </html>
