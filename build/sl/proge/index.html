@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Go4trail</title>
+    <!--styles-->
+    <link rel="stylesheet" href="/build/styles/main.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans:800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div id="navigation-bar" class="sticky-bar">
+        <!--add home button on the left-->
+        <div class="home-container">
+            <a href="/build/index.html" id="logo">Go4trail</a>
+        </div>
+        <div class="menu-icon-container">
+            <button class="menu-icon" data-target="menu">
+                <i class="fas fa-bars" id="menu-button"></i>
+            </button>
+        </div>
+
+        <!--menu content-->
+        <div id="menu">
+            <a id="close-button">&times;</a>
+
+            <ul class="menu-content">
+                <li><a href="/build/sl/info.html" class="menu-link">INFO</a></li>
+                <li class=""><a class="menu-link" id="races-button">Proge</a></li>
+                <ul id="dropdown" class="hide">
+                    <li class="hide"><a href="goriski-tek.html" class="menu-link">Gorica Race</a></li>
+                    <li class="hide"><a href="go1v-12km.html" class="menu-link">Go1V</a></li>
+                    <li class="hide"><a href="go3v-28km.html" class="menu-link">Go3V</a></li>
+                    <li class="hide"><a href="ultra-58km.html" class="menu-link">Počasna a drzna Ultra </a></li>
+                </ul>
+                <li><a href="https://sportotime.com/slv/dogodek/964" target="_blank" rel="noopener noreferrer" class="menu-link">Prijava</a></li>
+                <li><a href="/build/sl/o-nas.html" class="menu-link">O nas</a></li>
+                <li><a href="/build/sl/kontakt.html" class="menu-link">Kontakt</a></li>
+                <li><a href="/build/en/index.html" class="language-switch menu-link">EN <i class="fas fa-globe"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="flex-box">
+        <!--section-A-->
+        <section id="section-a">
+            <div class="content-wrap">
+                <h2 class="content-title">Proge</h2>
+            </div>
+            <ul class="image-grid">
+                <li id="race-1">
+                    <div class="card-content">
+                        <img src="/build/images/race-1.jpg" alt="Gorica Run">
+                        <h2 class="card-title">Gorica Run</h2>
+                        <p> Distance: 10km <br>
+                            Elevation: 0   
+                        </p>
+                        <a href="goriski-tek.html" class="read-more">Read More</a>
+                    </div>
+                </li>
+                <li id="race-2">
+                    <div class="card-content">
+                        <img src="/build/images/race-2.jpg" alt="Go1v">
+                        <h2 class="card-title">Go1V</h2>
+                        <p> Distance: 12km <br>   
+                            Elevation: 600m  </p>
+                        <a href="go1v-12km.html" class="read-more">Read More</a>
+                    </div>
+                </li>
+                <li id="race-3">
+                    <div class="card-content">
+                        <img src="/build/images/race-3.jpg" alt="Go3V">
+                        <h2 class="card-title">Go3V</h2>
+                        <p> Distance: 28km <br>
+                            Elevation: 1675m  </p>
+                        <a href="go3v-28km.html" class="read-more">Read More</a>
+                    </div>
+                </li>
+                <li id="race-4">
+                    <div class="card-content">
+                        <img src="/build/images/race-4.jpg" alt="Počasna a drzna Ultra">
+                        <h2 class="card-title">Počasna a drzna Ultra</h2>
+                        <p> Distance: 58km <br>
+                            Elevation: 2864m  </p>
+                        <a href="ultra-58km.html" class="read-more">Read More</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--section-C-->
+        <section id="section-c" class="grid">
+            <div class="content-wrap">
+                <div class="logo-container">
+                    <a href="https://www.instagram.com/go4trail/" target="_blank" rel="noopener noreferrer" class="logo-icon" data-target="menu">
+                    <i class="fab fa-instagram"></i></a>
+                    <a href="javascript:void(0);" class="logo-icon" data-target="menu">
+                        <i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer id="main-footer" class="grid">
+            <div>Go4trail | by Teo Winkler</div>
+        </footer>
+    </div>
+
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/src/scripts/mainScript.js"></script>
+</body>
+
+</html>
