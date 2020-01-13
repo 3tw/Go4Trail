@@ -18,22 +18,16 @@
     transform: translate(-10px, -10px);
   }
 }
-@font-face {
-  font-family: Roboto, sans-serif;
-}
-@font-face {
-  font-family: "Lato", sans-serif;
-}
 html {
   height: 100%;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: white;
   color: #333;
-  font-size: 1.1em;
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.4em;
   text-align: center;
   height: 100%;
   margin: 0;
@@ -48,7 +42,7 @@ img {
 h1, h2, h3 {
   margin: 0;
   padding: 1em 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
 }
 
@@ -67,16 +61,16 @@ a {
   text-decoration: none;
 }
 
-.home-icon {
-  color: #FFBB94;
-  font-size: 1.7em;
-  padding: 1em;
-  margin-left: 0.5em;
+#logo {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 2em;
+  padding: 1em 0 1em 0;
+  color: white;
 }
 
 .menu-icon {
-  color: #FFBB94;
-  font-size: 1.8em;
+  color: white;
+  font-size: 2em;
   padding: 1em;
   border: none;
   background-color: inherit;
@@ -116,11 +110,11 @@ a {
   padding: 1em;
   text-decoration: none;
   font-size: 1.7em;
-  line-height: 0.4em;
+  line-height: 5px;
   text-align: center;
   display: block;
   transition: 0.3s;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: lighter;
 }
 
@@ -167,9 +161,9 @@ button {
 }
 
 .logo-icon {
-  color: black;
+  color: #333;
   font-size: 1.8em;
-  padding: 0.2em;
+  padding: 0.3em;
 }
 
 .about p > a {
@@ -247,7 +241,9 @@ button {
 
 .home-container {
   flex-basis: 10%;
-  text-align: center;
+  height: 100%;
+  display: inline-flex;
+  padding-left: 5%;
 }
 
 .menu-icon-container {
@@ -345,9 +341,15 @@ button {
   padding: 0.5em;
   margin-top: 0.5em;
   background-color: #87c5be;
-  color: white;
+  color: whitesmoke;
   border-bottom: 0;
   border-radius: 3px;
+}
+
+#submit-button:hover,
+#submit-button:focus {
+  color: white;
+  text-decoration: underline;
 }
 
 .has-error {
@@ -356,7 +358,7 @@ button {
 
 .showcase-image {
   position: relative;
-  height: 50vh;
+  height: 45vh;
 }
 
 .showcase-image img {
@@ -373,7 +375,7 @@ button {
   bottom: 40%;
   color: whitesmoke;
   font-size: 1.5em;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.1em;
   font-weight: lighter;
   background-color: rgba(0, 0, 0, 0.3);
@@ -461,19 +463,28 @@ button {
     display: inline-flex;
     justify-content: space-around;
     height: min-content;
-    padding-right: 5%;
+    padding-right: 3%;
+    align-items: center;
   }
 
   #menu ul li {
     height: min-content;
     padding: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+
+  .language-switch {
+    apadding-right: 5px;
   }
 
   #navigation-bar .menu-icon-container,
 #menu #close-button,
 #dropdown.hide {
     display: none;
+  }
+
+  .menu-link {
+    color: white;
   }
 
   #contact-form {
