@@ -264,6 +264,7 @@ button {
 
 #section-a {
   background: white;
+  padding: 1em 1em 0 1em;
 }
 
 #section-a ul li {
@@ -396,7 +397,6 @@ button {
 
 .image-grid li {
   background: whitesmoke;
-  margin: 0 1em 0 1em;
 }
 
 @media screen and (min-width: 700px) {
