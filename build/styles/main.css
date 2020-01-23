@@ -26,7 +26,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: white;
   color: #333;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.4em;
   text-align: center;
   height: 100%;
@@ -59,6 +59,19 @@ ul {
 
 a {
   text-decoration: none;
+  color: #87c5be;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.green-bg {
+  background-color: #87c5be;
+}
+
+.wsmoke-bg {
+  background-color: whitesmoke;
 }
 
 #logo {
@@ -140,7 +153,7 @@ button {
   cursor: pointer;
 }
 
-.read-more {
+.btn {
   display: inline-block;
   text-decoration: 0;
   background: #87c5be;
@@ -148,8 +161,8 @@ button {
   padding: 0.5em 1em;
 }
 
-.read-more:hover,
-.read-more:focus {
+.btn:hover,
+.btn:focus {
   color: #87c5be;
   background: #87c5be40;
 }
@@ -165,12 +178,8 @@ button {
   padding: 0.3em;
 }
 
-.about p > a {
-  color: #87c5be;
-}
-
-.about p > a:hover {
-  text-decoration: underline;
+#logo:hover {
+  text-decoration: none;
 }
 
 .arrow,
@@ -276,8 +285,7 @@ button {
 }
 
 #main-footer {
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding: 2em 0 0 1em;
   background: white;
   color: #00000070;
   line-height: 2em;
@@ -297,6 +305,10 @@ button {
 
 .flex-footer {
   flex: auto;
+}
+
+.green-bg.box-item {
+  margin-bottom: 1em;
 }
 
 #contact-form {
@@ -376,9 +388,9 @@ button {
 }
 
 .headline {
-  background: #87c5be;
   color: white;
   padding: 0;
+  margin-bottom: 1em;
   height: 50vh;
   width: 100%;
   display: none;
@@ -402,6 +414,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .headline.active {
@@ -423,7 +436,7 @@ button {
 @media screen and (min-width: 700px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 22em)) 1fr;
   }
 
   .image-grid {
@@ -432,6 +445,15 @@ button {
     grid-template-rows: auto auto;
     grid-template-areas: ". race-1 race-2" ". race-3 race-4";
     grid-gap: 1em;
+  }
+
+  .box-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 15em)) 1fr;
+  }
+
+  .box-item {
+    grid-column: 2/4;
   }
 
   #race-1 {
@@ -519,7 +541,7 @@ button {
 @media screen and (min-width: 1200px) {
   .image-grid {
     display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 1fr repeat(4, minmax(auto, 22em)) 1fr;
     grid-template-rows: auto;
     grid-template-areas: ". race-1 race-2 race-3 race-4 .";
     grid-gap: 1em;
