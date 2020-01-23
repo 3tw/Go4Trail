@@ -2,9 +2,6 @@
 $(document).ready(function () { 
     let menuButton = document.getElementById("menu-button");
     let closeButton = document.getElementById("close-button");
-
-    let racesButton = document.getElementById("races-button");
-
     let smallScreen = window.matchMedia("(max-width: 700px)");
 
     // refresh on top
@@ -51,7 +48,6 @@ $(document).ready(function () {
     $(window).resize(function() {
         $width = $(window).width()
     });
-    console.log($width)
 
     $(".arrow").click(function(){    
         if ($width >= 700) { 
