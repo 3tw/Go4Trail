@@ -41,9 +41,9 @@ img {
 
 h1, h2, h3 {
   margin: 0;
-  padding: 1em 0;
+  padding: 1em;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 p {
@@ -107,10 +107,9 @@ a {
 
 .menu-content li,
 .menu-content li ul li {
-  padding: 1em;
+  padding: 0.5em;
   text-decoration: none;
   font-size: 1.7em;
-  line-height: 5px;
   text-align: center;
   display: block;
   transition: 0.3s;
@@ -251,20 +250,9 @@ button {
   text-align: right;
 }
 
-.headline {
-  background: white;
-  padding: 0 1em 0 1em;
-  height: min-content;
-  display: none;
-}
-
-.headline.active {
-  display: block;
-}
-
 #section-a {
   background: white;
-  padding: 1em 1em 0 1em;
+  padding: 0em 1em 0 1em;
 }
 
 #section-a ul li {
@@ -316,7 +304,7 @@ button {
   height: min-content;
   text-align: center;
   padding: 0 2em 0 2em;
-  line-height: 2em;
+  line-height: 2.8em;
 }
 
 #contact-form > input,
@@ -359,7 +347,7 @@ button {
 
 .showcase-image {
   position: relative;
-  height: 45vh;
+  height: 50vh;
 }
 
 .showcase-image img {
@@ -384,6 +372,39 @@ button {
 }
 
 .big-headline.active {
+  display: block;
+}
+
+.headline {
+  background: #87c5be;
+  color: white;
+  padding: 0;
+  height: 50vh;
+  width: 100%;
+  display: none;
+  position: relative;
+}
+
+.text-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.headline-text {
+  position: absolute;
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.1em;
+  font-weight: lighter;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headline.active {
   display: block;
 }
 
@@ -432,6 +453,10 @@ button {
   .content-wrap,
 #main-footer div {
     grid-column: 2/4;
+  }
+
+  .image-wrap {
+    grid-column: 1/5;
   }
 
   .showcase-image {

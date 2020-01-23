@@ -1,7 +1,7 @@
 // shocase
 .showcase-image
     position: relative
-    height: 45vh
+    height: 50vh
 
 .showcase-image img
     position: relative
@@ -10,6 +10,7 @@
     object-fit: cover
     object-position: bottom
 
+//desktop headline
 .big-headline
     position: absolute
     width: 100%
@@ -22,6 +23,36 @@
     background-color: rgba(0, 0, 0, 0.3)
     display: none
 .big-headline.active
+    display: block
+
+//mobile headline
+.headline
+    background: $green
+    color: white
+    padding: 0
+    margin-bottom: 1em
+    height: 50vh
+    width: 100%
+    display: none
+    position: relative
+.text-wrap
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+.headline-text
+    position: absolute
+    font-size: 1.5em
+    font-family: $button-font
+    line-height: 1.1em
+    font-weight: lighter
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+
+.headline.active
     display: block
 
 // race containers
