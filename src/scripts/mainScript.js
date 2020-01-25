@@ -54,10 +54,10 @@ $(document).ready(function () {
             // for index.html
             if (window.location.href == "http://127.0.0.1:5500/build/index.html" || 
                 window.location.href == "http://127.0.0.1:5500/build/") {
-                $("html, body").animate({scrollTop:$("#section-a").position().top}, "slow");
+                $("html, body").animate({scrollTop:$(".section-a").position().top}, "slow");
             }
             else if (window.location.href == "http://127.0.0.1:5500/build/en/index.html") {
-                $("html, body").animate({scrollTop:$("#section-a").position().top}, "slow");
+                $("html, body").animate({scrollTop:$(".section-a").position().top}, "slow");
         }
         };
     });

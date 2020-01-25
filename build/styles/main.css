@@ -28,7 +28,6 @@ body {
   color: #333;
   font-size: 1.1em;
   line-height: 1.4em;
-  text-align: center;
   height: 100%;
   margin: 0;
 }
@@ -39,11 +38,11 @@ img {
   height: auto;
 }
 
-h1, h2, h3 {
+h1, h2, h2 {
   margin: 0;
-  padding: 1em;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
+  padding: 1em 0 1em 0;
+  font-family: Arial;
+  font-weight: normal;
 }
 
 p {
@@ -64,14 +63,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.green-bg {
-  background-color: #87c5be;
-}
-
-.wsmoke-bg {
-  background-color: whitesmoke;
 }
 
 #logo {
@@ -259,29 +250,30 @@ button {
   text-align: right;
 }
 
-#section-a {
+.section-a {
   background: white;
   padding: 0em 1em 0 1em;
 }
 
-#section-a ul li {
+.section-a ul li {
   margin-bottom: 1em;
 }
 
-#section-a ul li h2 {
+.section-a ul li h1 {
   padding-bottom: 0;
 }
 
-#section-b {
+.section-b {
   background: whitesmoke;
 }
 
-#section-c {
+.section-c {
   background: white;
 }
 
-#section-d {
+.section-d {
   background: white;
+  text-align: left;
 }
 
 #main-footer {
@@ -291,6 +283,7 @@ button {
   line-height: 2em;
   height: min-content;
   font-size: 10px;
+  text-align: center;
 }
 
 .flex-box {
@@ -307,8 +300,12 @@ button {
   flex: auto;
 }
 
-.green-bg.box-item {
-  margin-bottom: 1em;
+.center {
+  text-align: center;
+}
+
+.top-padding {
+  padding-top: 1em;
 }
 
 #contact-form {
@@ -372,6 +369,7 @@ button {
 
 .big-headline {
   position: absolute;
+  text-align: center;
   width: 100%;
   bottom: 40%;
   color: whitesmoke;
@@ -389,6 +387,7 @@ button {
 
 .headline {
   color: white;
+  background-color: #87c5be;
   padding: 0;
   margin-bottom: 1em;
   height: 50vh;
@@ -407,6 +406,7 @@ button {
 
 .headline-text {
   position: absolute;
+  text-align: center;
   font-size: 1.5em;
   font-family: "Roboto", sans-serif;
   line-height: 1.1em;
@@ -423,9 +423,10 @@ button {
 
 .card-content {
   padding: 1em;
+  text-align: center;
 }
 
-.card-content h2 {
+.card-content h1 {
   color: #61b6ac;
 }
 
@@ -445,15 +446,6 @@ button {
     grid-template-rows: auto auto;
     grid-template-areas: ". race-1 race-2" ". race-3 race-4";
     grid-gap: 1em;
-  }
-
-  .box-grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 15em)) 1fr;
-  }
-
-  .box-item {
-    grid-column: 2/4;
   }
 
   #race-1 {
@@ -485,11 +477,11 @@ button {
     height: 100vh;
   }
 
-  #section-a {
+  .section-a {
     padding: 1em;
   }
 
-  #section-a ul li {
+  .section-a ul li {
     margin: 0;
   }
 
