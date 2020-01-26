@@ -2,8 +2,8 @@
 #logo
     font-family: $logo-font
     font-size: 2em
-    padding: 1em 0 1em 0
     color: white
+    align-self: center
 
 // lang switch
 
@@ -12,10 +12,10 @@
 .menu-icon
     color: white
     font-size: 2em
-    padding: 1em
     border: none
     background-color: inherit
     cursor: pointer
+    align-self: center
 
 #menu
     height: 100%
@@ -24,7 +24,7 @@
     z-index: 1000 //must be higher than #navigation-bar
     left: 0
     top: 0
-    background-color: rgba(0, 0, 0, 0.95)   
+    background-color: $green
     transition: 0.5s
     overflow-y: scroll
     overflow-x: hidden
@@ -52,6 +52,8 @@
     transition: 0.3s
     font-family: $button-font
     font-weight: lighter
+.menu-link:hover
+    text-decoration: none
 
 
 #close-button

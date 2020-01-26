@@ -68,17 +68,17 @@ a:hover {
 #logo {
   font-family: "Martel Sans", sans-serif;
   font-size: 2em;
-  padding: 1em 0 1em 0;
   color: white;
+  align-self: center;
 }
 
 .menu-icon {
   color: white;
   font-size: 2em;
-  padding: 1em;
   border: none;
   background-color: inherit;
   cursor: pointer;
+  align-self: center;
 }
 
 #menu {
@@ -88,7 +88,7 @@ a:hover {
   z-index: 1000;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #87c5be;
   transition: 0.5s;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -119,6 +119,10 @@ a:hover {
   transition: 0.3s;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
+}
+
+.menu-link:hover {
+  text-decoration: none;
 }
 
 #close-button {
@@ -223,7 +227,8 @@ button {
   background: rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: first baseline;
+  justify-content: left;
   top: 0;
   left: 0;
   right: 0;
@@ -240,14 +245,17 @@ button {
 
 .home-container {
   flex-basis: 10%;
-  height: 100%;
+  height: inherit;
   display: inline-flex;
-  padding-left: 5%;
+  padding-left: 3%;
 }
 
 .menu-icon-container {
   flex-basis: 90%;
-  text-align: right;
+  height: inherit;
+  display: inline-flex;
+  justify-content: right;
+  padding-right: 3%;
 }
 
 .section-a {
@@ -437,12 +445,12 @@ button {
 @media screen and (min-width: 700px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 22em)) 1fr;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 20em)) 1fr;
   }
 
   .image-grid {
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 24em)) 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: ". race-1 race-2" ". race-3 race-4";
     grid-gap: 1em;
@@ -500,7 +508,7 @@ button {
 
   #menu ul {
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     height: min-content;
     padding-right: 3%;
     align-items: center;
@@ -508,7 +516,8 @@ button {
 
   #menu ul li {
     height: min-content;
-    padding: 0.5em;
+    padding-right: minmax(0.5, 1em);
+    pading-left: minmax(0.5, 1em);
     font-size: 1.3em;
   }
 
@@ -533,7 +542,7 @@ button {
 @media screen and (min-width: 1200px) {
   .image-grid {
     display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(auto, 22em)) 1fr;
+    grid-template-columns: 1fr repeat(4, 23vw) 1fr;
     grid-template-rows: auto;
     grid-template-areas: ". race-1 race-2 race-3 race-4 .";
     grid-gap: 1em;
