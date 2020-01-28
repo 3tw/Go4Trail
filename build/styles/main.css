@@ -77,13 +77,6 @@ a:hover {
   font-size: 0.8em;
 }
 
-#logo {
-  font-family: "Martel Sans", sans-serif;
-  font-size: 2em;
-  color: white;
-  align-self: center;
-}
-
 .menu-icon {
   color: white;
   font-size: 2em;
@@ -174,12 +167,12 @@ button {
   background: #87c5be40;
 }
 
-.logo-container {
+.icon-container {
   text-align: center;
-  padding-top: 1em;
+  padding-top: 2.5em;
 }
 
-.logo-icon {
+.icon {
   color: #333;
   font-size: 1.8em;
   padding: 0.3em;
@@ -255,15 +248,23 @@ button {
   background-color: #87c5be;
 }
 
+#logo {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  align-self: center;
+}
+
 .home-container {
-  flex-basis: 10%;
+  flex-basis: 205px;
+  min-width: 205px;
   height: inherit;
   display: inline-flex;
   padding-left: 3%;
 }
 
 .menu-icon-container {
-  flex-basis: 90%;
+  flex-basis: auto;
   height: inherit;
   display: inline-flex;
   justify-content: right;
@@ -425,8 +426,8 @@ a.toggle:hover {
   width: 100%;
   bottom: 40%;
   color: whitesmoke;
-  font-size: 1.5em;
   font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
   line-height: 1.1em;
   font-weight: lighter;
   background-color: rgba(0, 0, 0, 0.3);
