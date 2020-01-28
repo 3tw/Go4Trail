@@ -1,7 +1,8 @@
 // check if doc is loaded
 $(document).ready(function () { 
-    let menuButton = document.getElementById("menu-button");
-    let closeButton = document.getElementById("close-button");
+    let $menuButton = $("#menu-button");
+    let $closeButton = $("#close-button");
+    let dropdownBox = $(".dropdown-box");
     let smallScreen = window.matchMedia("(max-width: 700px)");
 
     // refresh on top
@@ -31,16 +32,19 @@ $(document).ready(function () {
     };
 
     // button listeners
-    menuButton.addEventListener("click", openMenu);
-    closeButton.addEventListener("click", closeMenu);
+    $menuButton.click(openMenu);
+    $closeButton.click(closeMenu);
 
     // open & close menu
     function openMenu() {
-        document.getElementById("menu").style.width = "100%";
+        $("#menu").width("100%")
     };
     function closeMenu() {
-        document.getElementById("menu").style.width = "0"
+        $("#menu").width("0")
     };
+
+    // open & close dropdown box
+
 
 
     // scroll to races
@@ -61,5 +65,20 @@ $(document).ready(function () {
         }
         };
     });
+
+    // expand items
+    $('.toggle').click(function(e) {
+        e.preventDefault();
+
+      if ($(this).next().hasClass('show')) {
+          $(this).next().removeClass('show');
+          $(this).next().slideUp(350);
+      } else {
+        $(this).parent().parent().find('li .inner').removeClass('show');
+        $(this).parent().parent().find('li .inner').slideUp(350);
+        $(this).next().toggleClass('show');
+        $(this).next().slideToggle(350);
+      }
+  });
 
 });

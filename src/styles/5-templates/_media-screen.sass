@@ -1,13 +1,13 @@
 @media screen and (min-width: 700px)
     .grid
         display: grid
-        grid-template-columns: 1fr repeat(2, minmax(auto, 20em)) 1fr
+        grid-template-columns: 1fr repeat(2, minmax(10em, 20em)) 1fr
 
     .image-grid
         display: grid
-        grid-template-columns: 1fr repeat(2, minmax(auto, 24em)) 1fr
+        grid-template-columns: 1fr repeat(2, minmax(10em, 24em)) 1fr
         grid-template-rows: auto auto
-        grid-template-areas: ". race-1 race-2" ". race-3 race-4"
+        grid-template-areas: ". race-1 race-2 ." ". race-3 race-4 ."
         grid-gap: 1em
 
     #race-1
@@ -55,8 +55,6 @@
 
     #menu ul li
         height: min-content
-        padding-right: minmax(0.5, 1em)
-        pading-left: minmax(0.5, 1em)
         font-size: 1.3em
 
     .language-switch
@@ -73,10 +71,10 @@
     #contact-form
         line-height: 1.5em
         
-@media screen and (min-width: 1200px)
+@media screen and (min-width: 1315px)
     .image-grid
         display: grid
-        grid-template-columns: 1fr repeat(4, 23vw) 1fr
+        grid-template-columns: 1fr repeat(4, minmax(15em, 20em)) 1fr
         grid-template-rows: auto
         grid-template-areas: ". race-1 race-2 race-3 race-4 ."
         grid-gap: 1em

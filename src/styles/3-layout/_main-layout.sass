@@ -39,8 +39,8 @@
 .section-a ul li
     margin-bottom: 1em
 
-.section-a ul li h1
-    padding-bottom: 0
+.section-a ul li a
+    margin-top: 1em
 
 .section-b
     background: whitesmoke
@@ -77,3 +77,31 @@
 
 .top-padding
     padding-top: 1em
+
+.equipment li,
+.price li
+    padding-left: 1.5em
+
+.big-spacing
+    line-height: 1.6em
+
+// accordian
+.inner
+    padding-left: 1em
+    overflow: hidden
+    display: none
+
+    &.show
+        /*display: block;*/
+a.toggle
+    display: block
+    background-color: $green
+    color: white
+    padding: 1em
+    border-radius: 0.1em
+    margin: 0.3em 0 0 0.3em
+    transition: background 0.3s ease
+
+    &:hover
+        color: $green
+        background: $green-transparent
