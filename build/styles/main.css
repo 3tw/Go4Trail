@@ -116,7 +116,7 @@ a:hover {
 
 .menu-content li,
 .menu-content li ul li {
-  padding: 0.5em 0.3em 0.5em 0.3em;
+  padding: 0.5em;
   text-decoration: none;
   font-size: 1.7em;
   text-align: center;
@@ -250,25 +250,33 @@ button {
 
 #logo {
   font-family: "Martel Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   color: white;
   align-self: center;
 }
 
 .home-container {
-  flex-basis: 205px;
-  min-width: 205px;
+  flex-basis: 20%;
   height: inherit;
   display: inline-flex;
   padding-left: 3%;
 }
 
 .menu-icon-container {
-  flex-basis: auto;
+  flex-basis: 80%;
   height: inherit;
   display: inline-flex;
   justify-content: right;
   padding-right: 3%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2em;
+  font-family: "Martel Sans", sans-serif;
+  padding: 0.5em;
+  display: inline-block;
 }
 
 .section-a {
@@ -298,7 +306,7 @@ button {
 }
 
 #main-footer {
-  padding: 2em 0 0 1em;
+  padding: 2em 0 0 0;
   background: white;
   color: #00000070;
   line-height: 2em;
@@ -310,7 +318,7 @@ button {
 .flex-box {
   display: flex;
   flex-flow: column;
-  height: calc(100vh - 100px);
+  height: calc(100% - 80px);
 }
 
 .flex-item {
@@ -442,7 +450,6 @@ a.toggle:hover {
   color: white;
   background-color: #87c5be;
   padding: 0;
-  margin-bottom: 1em;
   height: 40vh;
   width: 100%;
   display: none;
