@@ -6,7 +6,7 @@
     display: flex
     flex-direction: row
     align-items: first baseline
-    justify-content: left
+    justify-content: space-between
     top: 0
     left: 0
     right: 0
@@ -22,26 +22,26 @@
 // logo
 #logo
     font-family: $logo-font
-    font-size: 2em
+    font-size: 2.2rem
     color: white
     align-self: center
 
 .home-container
-    flex-basis: 20%
+    flex-basis: min-content
     height: inherit
     display: inline-flex
-    padding-left: 3%
+    padding-left: 1rem
 
 .menu-icon-container
-    flex-basis: 80%
+    flex-basis: auto
     height: inherit
     display: inline-flex
     justify-content: right
-    padding-right: 3%
+    padding-right: 0.5rem
 
 .title
     text-align: center
-    font-size: 2em
+    font-size: 2rem
     line-height: 1.2em
     font-family: $logo-font
     padding: 0.5em
@@ -59,13 +59,21 @@
 
 .section-b
     background: whitesmoke
+    font-size: 1.3rem
+    line-height: 1.8rem
+    margin-top: 1em
 
 .section-c
     background: white
+    font-size: 1.3rem
+    line-height: 1.8rem
 
 .section-d
     background: white
     text-align: left
+.section-d .content-wrap
+    font-size: $text-font
+    line-height: 1.6rem
 
 #main-footer
     padding: 2em 0 0 0
@@ -73,7 +81,7 @@
     color: #00000070
     line-height: 2em
     height: min-content
-    font-size: 10px
+    font-size: 0.65rem
     text-align: center
 
 .flex-box
@@ -92,19 +100,28 @@
 
 .top-padding
     padding-top: 1em
+.bottom-padding
+    padding-bottom: 1em
+.big-spacing
+    line-height: 1.6em
+
+// race descriptions
+.info-container
+    padding: 1rem 1rem 1rem 2rem
+    background-color: whitesmoke
 
 .equipment li,
 .price li
     padding-left: 1.5em
 
-.big-spacing
-    line-height: 1.6em
-
 // accordian
+.accordian a
+    font-size: 1.3rem
 .inner
-    padding-left: 1em
+    padding: 1rem
     overflow: hidden
     display: none
+    font-size: $text-font
 
     &.show
         /*display: block;*/

@@ -20,13 +20,13 @@
 }
 html {
   height: 100%;
+  font-size: 1em;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   background: white;
   color: #333;
-  font-size: 1.1em;
   line-height: 1.4em;
   height: 100%;
   margin: 0;
@@ -41,17 +41,21 @@ img {
 h1, h2, h3 {
   margin: 0;
   padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
   font-family: Arial;
   font-weight: normal;
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.7rem;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.4rem;
+}
+
+.content-title {
+  text-align: center;
 }
 
 p {
@@ -74,12 +78,16 @@ a:hover {
 }
 
 .small-text {
-  font-size: 0.8em;
+  font-size: 0.7rem;
+}
+
+.main-text {
+  font-size: 1.2rem;
 }
 
 .menu-icon {
   color: white;
-  font-size: 2em;
+  font-size: 2.5rem;
   border: none;
   background-color: inherit;
   cursor: pointer;
@@ -105,20 +113,11 @@ a:hover {
   width: 100%;
 }
 
-#dropdown {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: none;
-  font-size: 0.8em;
-  animation: fadeEffect 1.5s;
-}
-
 .menu-content li,
 .menu-content li ul li {
   padding: 0.5em;
   text-decoration: none;
-  font-size: 1.7em;
+  font-size: 2rem;
   text-align: center;
   display: block;
   transition: 0.3s;
@@ -135,7 +134,7 @@ a:hover {
   padding-top: 0.5em;
   padding-right: 1em;
   right: 0;
-  font-size: 3em;
+  font-size: 3.5rem;
   color: whitesmoke;
   cursor: pointer;
 }
@@ -143,10 +142,6 @@ a:hover {
 .menu-link {
   color: whitesmoke;
   cursor: pointer;
-}
-
-#dropdown.active {
-  display: block;
 }
 
 button {
@@ -158,7 +153,8 @@ button {
   text-decoration: 0;
   background: #87c5be;
   color: white;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 1.2rem;
 }
 
 .btn:hover,
@@ -174,7 +170,7 @@ button {
 
 .icon {
   color: #333;
-  font-size: 1.8em;
+  font-size: 2rem;
   padding: 0.3em;
 }
 
@@ -233,7 +229,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: first baseline;
-  justify-content: left;
+  justify-content: space-between;
   top: 0;
   left: 0;
   right: 0;
@@ -250,29 +246,29 @@ button {
 
 #logo {
   font-family: "Martel Sans", sans-serif;
-  font-size: 2em;
+  font-size: 2.2rem;
   color: white;
   align-self: center;
 }
 
 .home-container {
-  flex-basis: 20%;
+  flex-basis: min-content;
   height: inherit;
   display: inline-flex;
-  padding-left: 3%;
+  padding-left: 1rem;
 }
 
 .menu-icon-container {
-  flex-basis: 80%;
+  flex-basis: auto;
   height: inherit;
   display: inline-flex;
   justify-content: right;
-  padding-right: 3%;
+  padding-right: 0.5rem;
 }
 
 .title {
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 1.2em;
   font-family: "Martel Sans", sans-serif;
   padding: 0.5em;
@@ -294,15 +290,25 @@ button {
 
 .section-b {
   background: whitesmoke;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-top: 1em;
 }
 
 .section-c {
   background: white;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 }
 
 .section-d {
   background: white;
   text-align: left;
+}
+
+.section-d .content-wrap {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 #main-footer {
@@ -311,7 +317,7 @@ button {
   color: #00000070;
   line-height: 2em;
   height: min-content;
-  font-size: 10px;
+  font-size: 0.65rem;
   text-align: center;
 }
 
@@ -337,19 +343,33 @@ button {
   padding-top: 1em;
 }
 
-.equipment li,
-.price li {
-  padding-left: 1.5em;
+.bottom-padding {
+  padding-bottom: 1em;
 }
 
 .big-spacing {
   line-height: 1.6em;
 }
 
+.info-container {
+  padding: 1rem 1rem 1rem 2rem;
+  background-color: whitesmoke;
+}
+
+.equipment li,
+.price li {
+  padding-left: 1.5em;
+}
+
+.accordian a {
+  font-size: 1.3rem;
+}
+
 .inner {
-  padding-left: 1em;
+  padding: 1rem;
   overflow: hidden;
   display: none;
+  font-size: 1.2rem;
 }
 .inner.show {
   /*display: block;*/
@@ -381,7 +401,7 @@ a.toggle:hover {
 #contact-form > textarea,
 #submit-button {
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.2rem;
   font-family: Arial, sans-serif;
   color: #333;
   border: none;
@@ -435,7 +455,7 @@ a.toggle:hover {
   bottom: 40%;
   color: whitesmoke;
   font-family: "Roboto", sans-serif;
-  font-size: 1.4em;
+  font-size: 1.6rem;
   line-height: 1.1em;
   font-weight: lighter;
   background-color: rgba(0, 0, 0, 0.3);
@@ -467,7 +487,7 @@ a.toggle:hover {
 .headline-text {
   position: absolute;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.8rem;
   font-family: "Roboto", sans-serif;
   line-height: 1.1em;
   font-weight: lighter;
@@ -489,6 +509,11 @@ a.toggle:hover {
 
 .card-content h1 {
   color: #61b6ac;
+}
+
+.card-content p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
 }
 
 .image-grid li {
@@ -553,7 +578,7 @@ a.toggle:hover {
     z-index: 1;
     overflow-x: hidden;
     transition: 0.5s;
-    flex-basis: 90%;
+    flex-basis: auto;
     display: inline-flex;
     overflow-y: hidden;
     background: transparent;
@@ -563,22 +588,17 @@ a.toggle:hover {
     display: inline-flex;
     justify-content: flex-end;
     height: min-content;
-    padding-right: 3%;
+    padding-right: 0.5rem;
     align-items: center;
   }
 
   #menu ul li {
     height: min-content;
-    font-size: 1.3em;
-  }
-
-  .language-switch {
-    padding-right: 5px;
+    font-size: 1.55rem;
   }
 
   #navigation-bar .menu-icon-container,
-#menu #close-button,
-#dropdown.hide {
+#menu #close-button {
     display: none;
   }
 
