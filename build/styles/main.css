@@ -482,6 +482,10 @@ img.image-center {
   object-position: center;
 }
 
+img.image-top {
+  object-position: top;
+}
+
 .big-headline {
   position: absolute;
   text-align: left;
@@ -560,7 +564,7 @@ img.image-center {
 }
 
 #race-1 {
-  background-color: #fa84c5;
+  background-color: #cbff77;
   margin-top: 1rem;
 }
 
