@@ -2,10 +2,8 @@
     padding: 1em 1em 0 1em
 
 #navigation-bar
-    background: rgba(0, 0, 0, 0.1)   
     display: flex
     flex-direction: row
-    align-items: first baseline
     justify-content: space-between
     top: 0
     left: 0
@@ -14,23 +12,22 @@
     width: 100%
     height: 80px
     position: absolute
-    
-#navigation-bar.sticky-bar
-    position: initial
-    background-color: $green
+    background-color: rgba(0, 0, 0, 0.1)
 
-// logo
+#navigation-bar.clear-bar
+    background-color: rgba(0, 0, 0, 0)
+
 #logo
     font-family: $logo-font
-    font-size: 2.2rem
+    font-size: 2.4rem
     color: white
-    align-self: center
 
 .home-container
     flex-basis: min-content
     height: inherit
     display: inline-flex
-    padding-left: 1rem
+    align-items: center
+    padding-left: 1.5rem
 
 .menu-icon-container
     flex-basis: auto
@@ -104,6 +101,18 @@
     padding-bottom: 1em
 .big-spacing
     line-height: 1.6em
+
+// content
+.opening
+    margin: 1rem 0 3rem 0
+    font-size: 1.5rem
+    line-height: 2rem
+    font-weight: lighter
+
+.landing-page-text
+    font-size: 1.2rem
+    line-height: 1.5rem
+    font-weight: lighter
 
 // race descriptions
 .info-container

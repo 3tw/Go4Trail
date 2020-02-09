@@ -2,7 +2,6 @@
 $(document).ready(function () { 
     let $menuButton = $("#menu-button");
     let $closeButton = $("#close-button");
-    let dropdownBox = $(".dropdown-box");
     let smallScreen = window.matchMedia("(max-width: 700px)");
 
     // refresh on top
@@ -42,10 +41,6 @@ $(document).ready(function () {
     function closeMenu() {
         $("#menu").width("0")
     };
-
-    // open & close dropdown box
-
-
 
     // scroll to races
     let $width = $(window).width();

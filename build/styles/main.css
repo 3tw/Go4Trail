@@ -40,8 +40,8 @@ img {
 
 h1, h2, h3 {
   margin: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
   font-family: Arial;
   font-weight: normal;
 }
@@ -54,12 +54,12 @@ h2 {
   font-size: 1.4rem;
 }
 
-.content-title {
-  text-align: center;
-}
-
 p {
   margin: 0;
+}
+
+.content-title {
+  text-align: center;
 }
 
 ul {
@@ -71,10 +71,6 @@ ul {
 a {
   text-decoration: none;
   color: #87c5be;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .small-text {
@@ -225,10 +221,8 @@ button {
 }
 
 #navigation-bar {
-  background: rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
-  align-items: first baseline;
   justify-content: space-between;
   top: 0;
   left: 0;
@@ -237,25 +231,25 @@ button {
   width: 100%;
   height: 80px;
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-#navigation-bar.sticky-bar {
-  position: initial;
-  background-color: #87c5be;
+#navigation-bar.clear-bar {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #logo {
   font-family: "Martel Sans", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: white;
-  align-self: center;
 }
 
 .home-container {
   flex-basis: min-content;
   height: inherit;
   display: inline-flex;
-  padding-left: 1rem;
+  align-items: center;
+  padding-left: 1.5rem;
 }
 
 .menu-icon-container {
@@ -351,6 +345,19 @@ button {
   line-height: 1.6em;
 }
 
+.opening {
+  margin: 1rem 0 3rem 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: lighter;
+}
+
+.landing-page-text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
+}
+
 .info-container {
   padding: 1rem 1rem 1rem 2rem;
   background-color: whitesmoke;
@@ -393,7 +400,7 @@ a.toggle:hover {
   width: inherit;
   height: min-content;
   text-align: center;
-  padding: 0 2em 0 2em;
+  margin: 3rem 2rem 0 2rem;
   line-height: 2.8em;
 }
 
@@ -435,6 +442,19 @@ a.toggle:hover {
   background-color: red;
 }
 
+.hero-image {
+  position: relative;
+  height: 60vh;
+}
+
+.hero-image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
 .showcase-image {
   position: relative;
   height: 60vh;
@@ -448,17 +468,28 @@ a.toggle:hover {
   object-position: bottom;
 }
 
+.showcase-title {
+  position: absolute;
+  text-align: left;
+  bottom: 1rem;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 3rem;
+  line-height: 1.1em;
+}
+
+img.image-center {
+  object-position: center;
+}
+
 .big-headline {
   position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 40%;
-  color: whitesmoke;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+  text-align: left;
+  bottom: 1rem;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 4rem;
   line-height: 1.1em;
-  font-weight: lighter;
-  background-color: rgba(0, 0, 0, 0.3);
   display: none;
 }
 
@@ -487,8 +518,8 @@ a.toggle:hover {
 .headline-text {
   position: absolute;
   text-align: center;
-  font-size: 1.8rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  font-family: "Martel Sans", sans-serif;
   line-height: 1.1em;
   font-weight: lighter;
   top: 50%;
@@ -507,17 +538,42 @@ a.toggle:hover {
   padding: 1em;
 }
 
-.card-content h1 {
-  color: #61b6ac;
+.card-title {
+  text-align: center;
+  bottom: 1rem;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.1em;
 }
 
 .card-content p {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: lighter;
+  color: #111;
+  padding-bottom: 1rem;
 }
 
 .image-grid li {
   background: whitesmoke;
+}
+
+#race-1 {
+  background-color: #fa84c5;
+  margin-top: 1rem;
+}
+
+#race-2 {
+  background-color: #fd5f56;
+}
+
+#race-3 {
+  background-color: #57c9c9;
+}
+
+#race-4 {
+  background-color: #fab65e;
 }
 
 @media screen and (min-width: 700px) {
@@ -530,7 +586,7 @@ a.toggle:hover {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(10em, 24em)) 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: ". race-1 race-2 ." ". race-3 race-4 .";
+    grid-template-areas: ". race-1 race-1 ." ". race-2 race-2 ." ". race-3 race-3 ." ". race-4 race-4 .";
     grid-gap: 1em;
   }
 
@@ -559,8 +615,12 @@ a.toggle:hover {
     grid-column: 1/5;
   }
 
-  .showcase-image {
-    height: 100vh;
+  .showcase-title {
+    font-size: 4rem;
+  }
+
+  .hero-image {
+    height: 70vh;
   }
 
   .section-a {
@@ -609,18 +669,10 @@ a.toggle:hover {
   #contact-form {
     line-height: 1.5em;
   }
-}
-@media screen and (min-width: 1315px) {
-  .image-grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(15em, 20em)) 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: ". race-1 race-2 race-3 race-4 .";
-    grid-gap: 1em;
-  }
 
-  .image-grid li {
-    margin: 0em;
+  .landing-page-text {
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 }
 

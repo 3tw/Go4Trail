@@ -16,7 +16,7 @@
 
 <body>
     <!--Navigation bar-->
-    <div id="navigation-bar" class="sticky-bar">
+    <div id="navigation-bar" class="fixed-bar">
         <!--add home button on the left-->
         <div class="home-container">
             <a href="/build/index.html" id="logo">T3V</a>
@@ -46,49 +46,59 @@
     </div>
 
     <div class="flex-box">
-        <!--section-A-->
-        <section class="section-a grid flex-item">
-            <div class="content-wrap">
-                <h1 class="content-title">Proge</h1>
-                <p class="main-text">Ste izkušen tekač, občasni rekreativec ali pa si samo želite novih doživetij? Za vsakega se nekaj najde. Tu so proge, ki smo jih pripravili za vas.</p>
+        <!--Header-->
+        <header>
+            <div class="showcase-image">
+                <img src="../../images/showcase-11.jpg" alt="showcase image" class="image-center">
+                <div class="text-wrap grid">
+                    <span class="showcase-title content-wrap">
+                        Proge
+                    </span>
+                </div>
             </div>
-            <ul class="image-grid image-wrap top-padding">
+        </header>
+        <!--section-A-->
+        <section class="section-a flex-item">
+            <li class="grid">
+                <p class="content-wrap opening">Ste izkušen tekač, občasni rekreativec ali pa si samo želite novih doživetij? Za vsakega se nekaj najde. Tu so proge, ki smo jih pripravili za vas.</p>
+            </li>
+            <ul class="image-grid">
                 <li id="race-1">
-                    <div class="card-content">
-                        <img src="/build/images/race-1.jpg" alt="Gorica Run">
-                        <h1 class="card-title">Goriški tek</h1>
-                        <p> Razdalja: <b>4,10 in 15 km</b> <br>
-                            <b>Dobrodelni tek</b>
-                        </p>
-                        <a href="goriski-tek.html" class="btn">Več o progi</a>
-                    </div>
+                    <a href="./sl/proge/goriski-tek.html">
+                        <div class="card-content">
+                            <h1 class="card-title">Goriški tek</h1>
+                            <p> <b>4, 10 in 15 km</b> |
+                                <b>Dobrodelni tek</b>
+                            </p>
+                        </div>
+                    </a>
                 </li>
                 <li id="race-2">
-                    <div class="card-content">
-                        <img src="/build/images/race-2.jpg" alt="Go1v">
-                        <h1 class="card-title">Go1V</h1>
-                        <p> Razdalja: <b>12 km</b> <br>
-                            Vzpon: <b>700 m</b> </p>
-                        <a href="go1v-12km.html" class="btn">Več o progi</a>
-                    </div>
+                    <a href="./sl/proge/go1v-12km.html">
+                        <div class="card-content">
+                            <h1 class="card-title">Go1V</h1>
+                            <p> <b>12 km</b> | <b>700 m</b>
+                            </p>
+                        </div>
+                    </a>
                 </li>
                 <li id="race-3">
-                    <div class="card-content">
-                        <img src="/build/images/race-3.jpg" alt="Go3V">
-                        <h1 class="card-title">Go3V</h1>
-                        <p> Razdalja: <b>28 km</b> <br>
-                            Vzpon: <b>1675 m</b> </p>
-                        <a href="go3v-28km.html" class="btn">Več o progi</a>
-                    </div>
+                    <a href="./sl/proge/go3v-28km.html">
+                        <div class="card-content">
+                            <h1 class="card-title">Go3V</h1>
+                            <p> <b>28 km</b> | <b>1675 m</b>
+                            </p>
+                        </div>
+                    </a>
                 </li>
                 <li id="race-4">
-                    <div class="card-content">
-                        <img src="/build/images/race-4.jpg" alt="Počasna a drzna Ultra">
-                        <h1 class="card-title">Počasna a drzna Ultra</h1>
-                        <p> Razdalja: <b>58 km</b> <br>
-                            Vzpon: <b>2864 m</b> </p>
-                        <a href="ultra-58km.html" class="btn">Več o progi</a>
-                    </div>
+                    <a href="./sl/proge/ultra-58km.html">
+                        <div class="card-content">
+                            <h1 class="card-title">Počasna a drzna ultra</h1>
+                            <p> <b>58 km</b> | <b>2864 m</b>
+                            </p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </section>
