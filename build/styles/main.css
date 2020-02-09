@@ -277,7 +277,7 @@ button {
 .flex-box {
   display: flex;
   flex-flow: column;
-  height: calc(100% - 80px);
+  height: 100%;
 }
 
 .flex-item {
@@ -453,7 +453,7 @@ img.image-top {
   bottom: 1rem;
   color: white;
   font-family: "Martel Sans", sans-serif;
-  font-size: 4rem;
+  font-size: 3.7rem;
   line-height: 1.1em;
   display: none;
 }
@@ -576,12 +576,8 @@ img.image-top {
     grid-column: 2/4;
   }
 
-  .image-wrap {
-    grid-column: 1/5;
-  }
-
   .showcase-title {
-    font-size: 4rem;
+    font-size: 3.7rem;
   }
 
   .hero-image {
