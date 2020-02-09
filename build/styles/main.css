@@ -79,7 +79,7 @@ a {
 
 .main-text {
   font-size: 1.3rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
 }
 
 .menu-icon {
@@ -244,14 +244,14 @@ button {
 .section-b {
   background: whitesmoke;
   font-size: 1.3rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
   margin-top: 1em;
 }
 
 .section-c {
   background: white;
   font-size: 1.3rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
 }
 
 .section-d {
@@ -261,7 +261,7 @@ button {
 
 .section-d .content-wrap {
   font-size: 1.3rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
 }
 
 #main-footer {
@@ -301,7 +301,7 @@ button {
 }
 
 .big-spacing {
-  line-height: 1.7em;
+  line-height: 2em;
 }
 
 .opening {
@@ -520,10 +520,6 @@ img.image-top {
   padding-bottom: 1rem;
 }
 
-.image-grid li {
-  background: whitesmoke;
-}
-
 #race-1 {
   background-color: rgba(255, 112, 104, 0.95);
   margin-top: 1rem;
@@ -555,23 +551,11 @@ img.image-top {
     grid-gap: 1em;
   }
 
-  #race-1 {
-    grid-area: race-1;
-  }
-
-  #race-2 {
-    grid-area: race-2;
-  }
-
-  #race-3 {
-    grid-area: race-3;
-  }
-
-  #race-4 {
-    grid-area: race-4;
-  }
-
-  .content-wrap,
+  #race-1,
+#race-2,
+#race-3,
+#race-4,
+.content-wrap,
 #main-footer div {
     grid-column: 2/4;
   }
