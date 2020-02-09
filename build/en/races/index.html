@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/build/styles/main.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Martel+Sans:800&display=swap" rel="stylesheet">
 </head>
 
@@ -44,50 +44,62 @@
     </div>
 
     <div class="flex-box">
-        <!--section-A-->
-        <section class="section-a grid flex-item">
-            <div class="content-wrap">
-                <h1 class="content-title">Races</h1>
-                <p class="main-text">Are you a seasoned trail runner, a weekend warior or just eager to try something new? We' ve got you
-                    covered! Check out the races we have prepared for you.</p>
+        
+        <!--Header-->
+        <header>
+            <div class="showcase-image">
+                <img src="../../images/showcase-11.jpg" alt="showcase image" class="image-center">
+                <div class="text-wrap grid">
+                    <span class="showcase-title content-wrap">
+                        Races
+                    </span>
+                </div>
             </div>
-            <ul class="image-grid image-wrap top-padding">
+        </header>
+        <!--section-A-->
+        <!--section-A-->
+        <section class="section-a flex-item">
+            <li class="grid">
+                <p class="content-wrap opening">Are you a seasoned trail runner, a weekend warior or just eager to try something new? We' ve got you
+                    covered! Check out the races we have prepared for you.</p>
+            </li>
+            <ul class="image-grid">
                 <li id="race-1">
-                    <div class="card-content">
-                        <img src="../../images/race-1.jpg" alt="Gorica Run">
-                        <h1 class="card-title">Gorica Run</h1>
-                        <p> Distance: <b>4, 10 and 15 km</b><br>
-                            <b>Charity Run</b>
-                        </p>
-                        <a href="gorica-run.html" class="btn">Read More</a>
-                    </div>
+                    <a href="./gorica-run.html">
+                        <div class="card-content">
+                            <h1 class="card-title">Gorica run</h1>
+                            <p> <b>4, 10 in 15 km</b> |
+                                <b>Charity run</b>
+                            </p>
+                        </div>
+                    </a>
                 </li>
                 <li id="race-2">
-                    <div class="card-content">
-                        <img src="../../images/race-2.jpg" alt="Go1v">
-                        <h1 class="card-title">Go1V</h1>
-                        <p> Distance: <b>12 km</b> <br>
-                            Elevation: <b>700 m</b> </p>
-                        <a href="go1v-12km.html" class="btn">Read More</a>
-                    </div>
+                    <a href="./go1v-12km.html">
+                        <div class="card-content">
+                            <h1 class="card-title">Go1V</h1>
+                            <p> <b>12 km</b> | <b>700 m</b>
+                            </p>
+                        </div>
+                    </a>
                 </li>
                 <li id="race-3">
-                    <div class="card-content">
-                        <img src="../../images/race-3.jpg" alt="Go3V">
-                        <h1 class="card-title">Go3V</h1>
-                        <p> Distance: <b>28 km</b> <br>
-                            Elevation: <b>1675 m</b> </p>
-                        <a href="go3v-28km.html" class="btn">Read More</a>
-                    </div>
+                    <a href="./go3v-28km.html">
+                        <div class="card-content">
+                            <h1 class="card-title">Go3V</h1>
+                            <p> <b>28 km</b> | <b>1675 m</b>
+                            </p>
+                        </div>
+                    </a>
                 </li>
                 <li id="race-4">
-                    <div class="card-content">
-                        <img src="../../images/race-4.jpg" alt="Počasna a drzna Ultra">
-                        <h1 class="card-title">Počasna a drzna Ultra</h1>
-                        <p> Distance: <b>58 km</b> <br>
-                            Elevation: <b>2864 m</b> </p>
-                        <a href="ultra-58km.html" class="btn">Read More</a>
-                    </div>
+                    <a href="./ultra-58km.html">
+                        <div class="card-content">
+                            <h1 class="card-title">Počasna a drzna ultra</h1>
+                            <p> <b>58 km</b> | <b>2864 m</b>
+                            </p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -107,7 +119,7 @@
 
         <!--Footer-->
         <footer id="main-footer" class="grid">
-            <div>Tek treh vrhov | by Teo Winkler</div>
+            <div>Tek treh vrhov | by <a href="https://teowinkler.com" target="_blank" rel="noopener noreferrer">Teo Winkler</a></div>
         </footer>
     </div>
 

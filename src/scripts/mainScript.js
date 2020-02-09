@@ -17,16 +17,13 @@ $(document).ready(function () {
     function shiftHeadline(smallScreen) {
         let $smallHeadline = $(".small-headline");
         let $bigHeadline = $(".big-headline");
-        let $arrow = $(".arrow");
         if (smallScreen.matches) {
             $smallHeadline.addClass("active");
             $bigHeadline.removeClass("active");
-            $arrow.removeClass("active");
         }
         else {
             $smallHeadline.removeClass("active");
             $bigHeadline.addClass("active");
-            $arrow.addClass("active");
     }
     };
 
@@ -48,18 +45,6 @@ $(document).ready(function () {
         $width = $(window).width()
     });
 
-    $(".arrow").click(function(){    
-        if ($width >= 700) { 
-            // for index.html
-            if (window.location.href == "http://127.0.0.1:5500/build/index.html" || 
-                window.location.href == "http://127.0.0.1:5500/build/") {
-                $("html, body").animate({scrollTop:$(".title").position().top}, "slow");
-            }
-            else if (window.location.href == "http://127.0.0.1:5500/build/en/index.html") {
-                $("html, body").animate({scrollTop:$(".title").position().top}, "slow");
-        }
-        };
-    });
 
     // expand items
     $('.toggle').click(function(e) {
