@@ -38,20 +38,23 @@ img {
   height: auto;
 }
 
-h1, h2, h3 {
+h1, h2 {
   margin: 0;
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
-  font-family: Arial;
-  font-weight: normal;
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
 }
 
 h2 {
   font-size: 1.4rem;
+  font-family: Arial;
+  font-weight: normal;
 }
 
 p {
@@ -242,10 +245,11 @@ button {
 }
 
 .section-b {
-  background: whitesmoke;
+  background: white;
   font-size: 1.3rem;
-  line-height: 2rem;
-  margin-top: 1em;
+  line-height: 1.8rem;
+  height: auto;
+  padding-top: 0;
 }
 
 .section-c {
@@ -313,8 +317,9 @@ button {
 
 .landing-page-text {
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   font-weight: lighter;
+  padding-bottom: 1.5rem;
 }
 
 .info-container {
@@ -522,7 +527,6 @@ img.image-top {
 
 #race-1 {
   background-color: rgba(255, 112, 104, 0.95);
-  margin-top: 1rem;
 }
 
 #race-2 {
@@ -572,6 +576,16 @@ img.image-top {
     padding: 1em;
   }
 
+  .section-b {
+    min-height: 30vh;
+    max-height: min-content;
+  }
+
+  .content-title,
+.section-b .content-wrap {
+    text-align: left;
+  }
+
   .section-a ul li {
     margin: 0;
   }
@@ -618,6 +632,8 @@ img.image-top {
   .landing-page-text {
     font-size: 1.4rem;
     line-height: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
   }
 }
 
