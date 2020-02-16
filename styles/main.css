@@ -475,6 +475,7 @@ img.image-top {
   bottom: 0;
   left: 0;
   right: 0;
+  position: absolute;
 }
 
 .headline-text {
@@ -596,6 +597,7 @@ img.image-top {
     flex-basis: auto;
     display: inline-flex;
     background: transparent;
+    align-items: flex-start;
   }
 
   #menu ul {
