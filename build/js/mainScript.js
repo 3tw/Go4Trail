@@ -39,24 +39,17 @@ $(document).ready(function () {
         $("#menu").width("0")
     };
 
-    // scroll to races
-    let $width = $(window).width();
-    $(window).resize(function() {
-        $width = $(window).width()
-    });
-
-
     // expand items
-    $('.toggle').click(function(e) {
+    $(".toggle").click(function(e) {
         e.preventDefault();
 
-      if ($(this).next().hasClass('show')) {
-          $(this).next().removeClass('show');
+      if ($(this).next().hasClass("show")) {
+          $(this).next().removeClass("show");
           $(this).next().slideUp(350);
       } else {
-        $(this).parent().parent().find('li .inner').removeClass('show');
-        $(this).parent().parent().find('li .inner').slideUp(350);
-        $(this).next().toggleClass('show');
+        $(this).parent().parent().find("li .inner").removeClass("show");
+        $(this).parent().parent().find("li .inner").slideUp(350);
+        $(this).next().toggleClass("show");
         $(this).next().slideToggle(350);
       }
   });

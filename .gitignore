@@ -2,3 +2,5 @@
 .git
 .vscode
 to-do.txt
+.deploy.sh
+README.md
