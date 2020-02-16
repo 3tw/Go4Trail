@@ -10,13 +10,11 @@ git checkout gh-pages
 # sync with master
 git merge master
 
-# navigate to build 
-
-
 # add CNAME for custom domain
 echo 'tektrehvrhov.si' > CNAME
+echo '**/src/styles/' >> .gitignore
 
 #push to remote origin
 git push origin gh-pages
 
-cd -
+cd
