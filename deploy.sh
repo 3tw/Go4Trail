@@ -12,7 +12,7 @@ git merge master
 
 # add CNAME for custom domain
 #echo 'tektrehvrhov.si' > CNAME
-#echo '**/src/styles/' >> .gitignore
+#echo '\n **/src/stylesSass/' >> .gitignore
 
 #push to remote origin
 git push origin gh-pages
