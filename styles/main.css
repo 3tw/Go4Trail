@@ -535,7 +535,7 @@ img.image-top {
 
 @media screen and (min-height: 500px) {
   .menu-content {
-    top: 25%;
+    top: 20%;
   }
 }
 @media screen and (min-width: 700px) {
