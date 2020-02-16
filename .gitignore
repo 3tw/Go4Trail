@@ -2,4 +2,4 @@
 .git
 .vscode
 to-do.txt
-.deploy.sh
+deploy.sh
