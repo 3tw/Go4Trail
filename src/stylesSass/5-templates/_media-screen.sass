@@ -1,3 +1,7 @@
+@media screen and (min-height: 500px)
+    .menu-content
+        padding-top: 30%
+
 @media screen and (min-width: 700px)
     .grid
         display: grid
@@ -38,22 +42,19 @@
     .section-a ul li
         margin: 0
 
-    #menu
+    #navigation-bar #menu
         height: initial
         width: 100%
         position: relative
         z-index: 1
-        overflow-x: hidden
         transition: 0.5s
         flex-basis: auto
         display: inline-flex
-        overflow-y: hidden
         background: transparent
     
     #menu ul
         display: inline-flex
         justify-content: flex-end
-        height: min-content
         padding-right: 0.5rem
         align-items: center
 
@@ -64,6 +65,9 @@
     #navigation-bar .menu-icon-container,
     #menu #close-button
         display: none
+
+    .menu-content
+        padding-top: 0
 
     .menu-link
         color: white
