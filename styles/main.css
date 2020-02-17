@@ -402,9 +402,12 @@ a.toggle:hover {
   background-color: red;
 }
 
+#showcase {
+  position: relative;
+}
+
 .hero-image {
   position: relative;
-  height: 16rem;
 }
 
 .hero-image img {
@@ -479,7 +482,7 @@ img.image-top {
 }
 
 .headline-text {
-  position: absolute;
+  position: relative;
   text-align: center;
   font-size: 2.4rem;
   font-family: "Martel Sans", sans-serif;
@@ -534,44 +537,9 @@ img.image-top {
   background-color: #fab65e;
 }
 
-@media screen and (min-height: 450px) and (max-width: 700px) {
-  .hero-image,
-.showcase-image {
-    height: 18rem;
-  }
-}
 @media screen and (min-height: 500px) and (max-width: 700px) {
   .menu-content {
     top: 20%;
-  }
-
-  .hero-image,
-.showcase-image {
-    height: 20rem;
-  }
-}
-@media screen and (min-height: 550px) and (max-width: 700px) {
-  .hero-image,
-.showcase-image {
-    height: 22rem;
-  }
-}
-@media screen and (min-height: 600px) and (max-width: 700px) {
-  .hero-image,
-.showcase-image {
-    height: 24rem;
-  }
-}
-@media screen and (min-height: 650px) and (max-width: 700px) {
-  .hero-image,
-.showcase-image {
-    height: 26rem;
-  }
-}
-@media screen and (min-height: 700px) and (max-width: 700px) {
-  .hero-image,
-.showcase-image {
-    height: 28rem;
   }
 }
 @media screen and (min-width: 700px) {
