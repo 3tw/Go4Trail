@@ -17,4 +17,4 @@ git merge master
 #push to remote origin
 git push origin gh-pages
 
-cd
+cd -
