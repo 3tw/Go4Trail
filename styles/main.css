@@ -408,6 +408,7 @@ a.toggle:hover {
 
 .hero-image {
   position: relative;
+  height: 18rem;
 }
 
 .hero-image img {
