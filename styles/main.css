@@ -24,10 +24,11 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
   background: white;
   color: #333;
-  line-height: 1.4em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.4rem;
   margin: 0;
 }
 
@@ -153,6 +154,7 @@ button {
   color: white;
   padding: 0.5em 1em 0.5em 1em;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .btn:hover,
@@ -350,7 +352,7 @@ a.toggle {
   transition: background 0.3s ease;
   line-height: 1.9rem;
   font-size: 1.3rem;
-  font-weight: normal;
+  font-weight: 300;
 }
 a.toggle:hover {
   color: #87c5be;
