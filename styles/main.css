@@ -52,7 +52,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: Arial;
   font-weight: normal;
 }
@@ -77,11 +77,11 @@ a {
 }
 
 .small-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .main-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.9rem;
 }
 
@@ -246,7 +246,7 @@ button {
 
 .section-b {
   background: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.8rem;
   height: auto;
   padding-top: 0;
@@ -264,7 +264,7 @@ button {
 }
 
 .section-d .content-wrap {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.9rem;
 }
 
@@ -329,14 +329,14 @@ button {
 }
 
 .accordian a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .inner {
   padding: 1rem;
   overflow: hidden;
   display: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .inner.show {
   /*display: block;*/
@@ -371,7 +371,7 @@ a.toggle:hover {
 #contact-form > textarea,
 #submit-button {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: Arial, sans-serif;
   color: #333;
   border: none;
