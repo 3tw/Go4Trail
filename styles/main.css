@@ -73,7 +73,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #72d3ab;
+  color: #4acaaf;
 }
 
 .small-text {
@@ -101,7 +101,7 @@ a {
   z-index: 1000;
   left: 0;
   top: 0;
-  background-color: #72d3ab;
+  background-color: #4acaaf;
   transition: 0.5s;
 }
 
@@ -150,7 +150,7 @@ button {
 .btn {
   display: inline-block;
   text-decoration: 0;
-  background: #72d3ab;
+  background: #4acaaf;
   color: white;
   padding: 0.5em 1em 0.5em 1em;
   font-size: 1.3rem;
@@ -159,7 +159,7 @@ button {
 
 .btn:hover,
 .btn:focus {
-  color: #72d3ab;
+  color: #4acaaf;
   background: #87c5be40;
 }
 
@@ -344,7 +344,7 @@ button {
 
 a.toggle {
   display: block;
-  background-color: #72d3ab;
+  background-color: #4acaaf;
   color: white;
   padding: 1rem;
   border-radius: 0.1em;
@@ -355,7 +355,7 @@ a.toggle {
   font-weight: 300;
 }
 a.toggle:hover {
-  color: #72d3ab;
+  color: #4acaaf;
   background: #87c5be40;
 }
 
@@ -389,7 +389,7 @@ a.toggle:hover {
   width: auto;
   padding: 0.5em;
   margin-top: 0.5em;
-  background-color: #72d3ab;
+  background-color: #4acaaf;
   color: white;
   border-bottom: 0;
   border-radius: 3px;
@@ -467,7 +467,7 @@ img.image-top {
 
 .headline {
   color: white;
-  background-color: #72d3ab;
+  background-color: #4acaaf;
   padding: 0;
   height: 80px;
   min-height: 70px;
