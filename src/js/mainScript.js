@@ -1,8 +1,8 @@
 // check if doc is loaded
 $(document).ready(function () { 
-    let $menuButton = $("#menu-button");
-    let $closeButton = $("#close-button");
-    let smallScreen = window.matchMedia("(max-width: 700px)");
+    const $menuButton = $("#menu-button");
+    const $closeButton = $("#close-button");
+    const smallScreen = window.matchMedia("(max-width: 700px)");
 
     // refresh on top
     $(this).scrollTop(0);
@@ -15,8 +15,8 @@ $(document).ready(function () {
 
     // manage headlines
     function shiftHeadline(smallScreen) {
-        let $smallHeadline = $(".small-headline");
-        let $bigHeadline = $(".big-headline");
+        const $smallHeadline = $(".small-headline");
+        const $bigHeadline = $(".big-headline");
         if (smallScreen.matches) {
             $smallHeadline.addClass("active");
             $bigHeadline.removeClass("active");
