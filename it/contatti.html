@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -18,7 +18,7 @@
 	<meta name="keywords" content="trail, running, treh, vrhov, slovenija, sabotin, skabrijel, sveta gora">
 	<meta name="description"
 		content="Tek treh vrhov 2020 | 12km, 28km, 58km | trail running over three summits surrounding the valley of Soča river in the Western Slovenia, 10th October 2020">
-	<title>Tek treh vrhov | About</title>
+	<title>Tek treh vrhov | Contatti Us</title>
 	<!--Styles-->
 	<link rel="stylesheet" href="/styles/main.css">
 	<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
@@ -43,14 +43,13 @@
 		<div id="menu">
 			<a id="close-button">&times;</a>
 			<ul class="menu-content">
-				<li><a href="faq" class="menu-link">FAQ</a></li>
-				<li><a href="races" class="menu-link" id="races-button">Races</a></li>
+				<li><a href="informazioni" class="menu-link">Info</a></li>
+				<li><a href="gare" class="menu-link" id="races-button">Gare</a></li>
 				<li><a href="https://sportotime.com/eng/event/1171" target="_blank" rel="noopener noreferrer"
-						class="menu-link">Registration</a></li>
-				<li><a href="about" class="menu-link">About</a></li>
-				<li><a href="contact-us" class="menu-link">Contact</a></li>
-				<li><a href="/sl/o-nas" class="language-switch menu-link">SI</a>
-				</li>
+						class="menu-link">Iscrizioni</a></li>
+				<li><a href="chi-siamo" class="menu-link">Chi siamo</a></li>
+				<li><a href="contatti" class="menu-link">Contatti</a></li>
+				<li><a href="/sl/kontakt" class="language-switch menu-link">SI</a></li>
 			</ul>
 		</div>
 	</header>
@@ -59,46 +58,41 @@
 		<!--Showcase image-->
 		<section>
 			<div class="showcase-image">
-				<img src="../assets/images/showcase-9-m.jpg" 
-					srcset="../assets/images/showcase-9-m.jpg 650w,
-					../assets/images/showcase-9.jpg 750w"
+				<img src="../assets/images/showcase-4-m.jpg" 
+					srcset="../assets/images/showcase-4-m.jpg 650w,
+					../assets/images/showcase-4.jpg 750w"
 					sizes="100vw"
-					alt="Tek treh vrhov - About us">
+					alt="Tek treh vrhov - Contatti">
 				<div class="text-wrap grid">
 					<span class="showcase-title content-wrap">
-						About
+						Contatti
 					</span>
 				</div>
 			</div>
 		</section>
-		<!--section-D-->
-		<section class="section-d grid flex-item">
-			<div class="content-wrap">
-				<p class="main-text">Tek treh vrhov (T3V) started as all good things do. With a group of friends doing
-					together what they like the most. We love to run. Especially when the trail goes uphill. That is why
-					we decided to bring you a unique running experience. From the picturesque ridge of Mt. Sabotin and
-					forest paths on Mt. Škabrijel to the cavern of Sveta Gora and stunning views of the Soča river. We
-					wanted to capture the diversity that our homeground has to offer. And what better way to experience
-					it than by going on a journey across three summits.</p>
-			</div>
-		</section>
-
 		<!--section-C-->
-		<section class="section-c" class="grid">
+		<section class="section-c grid flex-item">
 			<div class="content-wrap">
-				<div class="icon-container">
-					<a href="https://www.instagram.com/go4trail/" target="_blank" rel="noopener noreferrer" class="icon"
-						data-target="menu">
-						<i class="fab fa-instagram"></i></a>
-					<a href="https://www.facebook.com/trail3v.eu/" target="_blank" class="icon" data-target="menu">
-						<i class="fab fa-facebook-square"></i></a>
-				</div>
+				<p class="opening">We'd love to hear from you.</p>
+				<form id="contact-form" action="https://getform.io/f/80864511-72cb-4a68-99ef-a2fef0de680a"
+					method="POST">
+					<input type="text" name="name" id="name" placeholder="Full name" class="input-field">
+					<input type="email" name="email" id="email" placeholder="Your e-mail" class="input-field">
+					<input type="text" name="subject" id="subjcet" placeholder="Subject" class="input-field">
+					<textarea name="message" id="message" rows=8 placeholder="Message" class="input-field"></textarea>
+					<button type=submit id="submit-button">Send your message</button>
+				</form>
 			</div>
-
 		</section>
 
 		<!--Footer-->
-		<footer id="main-footer" class="grid">
+		<div class="icon-container">
+			<a href="https://www.instagram.com/go4trail/" class="icon" data-target="menu">
+				<i class="fab fa-instagram"></i></a>
+			<a href="https://www.facebook.com/trail3v.eu/" target="_blank" class="icon" data-target="menu">
+				<i class="fab fa-facebook-square"></i></a>
+		</div>
+		<footer id="main-footer" class="grid flex-footer">
 			<div>Tek treh vrhov | by <a href="https://teowinkler.com" target="_blank" rel="noopener noreferrer">Teo
 					Winkler</a></div>
 		</footer>
@@ -106,7 +100,10 @@
 
 	<!--Scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/src/js/jquery.validate.js"></script>
 	<script type="text/javascript" src="/src/js/mainScript.js"></script>
+	<script type="text/javascript" src="/src/js/formValidation.js"></script>
+
 </body>
 
 </html>

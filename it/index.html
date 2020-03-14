@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sl">
+<html lang="it">
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -15,10 +15,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="keywords" content="trail, tek, treh, vrhov, slovenija, sabotin, škabrijel, sveta gora">
+	<meta name="keywords" content="trail, running, treh, vrhov, slovenija, sabotin, skabrijel, sveta gora">
 	<meta name="description"
-		content="Tek treh vrhov 2020 | 12km, 28km, 58km | tekaška preizkušnja med tremi vrhovi ob dolini reke Soče, 10. oktober 2020">
-	<title>Tek treh vrhov | Proge</title>
+		content="Tek treh vrhov 2020 | 12km, 28km, 58km | trail running over three summits surrounding the valley of Soča river in the Western Slovenia, 10th October 2020">
+	<title>Tek treh vrhov 2020</title>
+
 	<!--Styles-->
 	<link rel="stylesheet" href="/styles/main.css">
 	<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
@@ -41,56 +42,74 @@
 		<!--Menu content-->
 		<div id="menu">
 			<a id="close-button">&times;</a>
+
 			<ul class="menu-content">
-				<li><a href="/sl/info" class="menu-link">Info</a></li>
-				<li><a href="/sl/proge" class="menu-link" id="races-button">Proge</a></li>
-				<li><a href="https://sportotime.com/slv/dogodek/1171" target="_blank" rel="noopener noreferrer"
-						class="menu-link">Prijava</a></li>
-				<li><a href="/sl/o-nas" class="menu-link">O nas</a></li>
-				<li><a href="/sl/kontakt" class="menu-link">Kontakt</a></li>
-				<li>
-					<a href="/en/races" class="language-switch menu-link">EN</a>
-					<span>/</span>					
-					<a href="/it/gare" class="language-switch menu-link">IT</a>
+				<li><a href="informazioni" class="menu-link">Info</a></li>
+				<li><a href="/it/gare" class="menu-link" id="races-button">Gare</a></li>
+				<li><a href="https://sportotime.com/eng/event/1171" target="_blank" rel="noopener noreferrer"
+						class="menu-link">Iscrizioni</a></li>
+				<li><a href="chi-siamo" class="menu-link">Chi siamo</a></li>
+				<li><a href="contatti" class="menu-link">Contatti</a></li>
+				<li><a href="/" class="language-switch menu-link">SI</a>
 				</li>
 			</ul>
 		</div>
 	</header>
 
-	<div class="flex-box">
-		<!--Showcase image-->
-		<section>
-			<div class="showcase-image">
-				<img src="../../assets/images/showcase-11.jpg" alt="Tek treh vrhov - proge" class="image-center">
-				<div class="text-wrap grid">
-					<span class="showcase-title content-wrap">
-						Proge
-					</span>
-				</div>
+	<!--Showcase image-->
+	<section id="showcase">
+		<div class="hero-image">
+			<img src="../assets/images/showcase-1-m.jpg" 
+				srcset="../assets/images/showcase-1-m.jpg 650w,
+				../assets/images/showcase-1.jpg 750w"
+				sizes="100vw"
+				alt="Tek treh vrhov - hero image">
+			<div class="text-wrap grid">
+				<span class="big-headline content-wrap">
+					Tek treh vrhov
+				</span>
+			</div>
+		</div>
+	</section>
+
+	<!--Main-->
+	<main id="main">
+
+		<!--headline-->
+		<div class="headline small-headline ">
+			<div class="text-wrap">
+				<span class="headline-text">
+					Tek treh vrhov
+				</span>
+			</div>
+		</div>
+
+		<!--section-B-->
+		<section class="section-b grid">
+			<div class="content-wrap center">
+				<h1 class="content-title">A Race Between the Past and the Future</h1>
+				<p class="landing-page-text">
+					Mt. Sabotin, Mt. Škabrijel and Sveta Gora are central to our event. Hillsides that used to seperate
+					people are uniting us today. We marked three trails over these summits. It's time to choose yours.
+				</p>
 			</div>
 		</section>
-		<!--section-A-->
-		<section class="section-a flex-item">
 
+		<!--section-A-->
+		<section class="section-a">
 			<ul class="image-grid">
-				<li class="content-wrap">
-					<p class="opening">
-						Ste izkušen tekač, občasni rekreativec ali pa si samo želite novih
-						doživetij? Za vsakega se nekaj najde. Poglejte si proge, ki smo jih pripravili za vas.
-					</p>
-				</li>
 				<li id="race-1">
-					<a href="./goriski-tek">
+					<a href="./gare/goriski-tek">
 						<div class="card-content">
-							<h1 class="card-title">Goriški tek</h1>
+							<h1 class="card-title">Gorica run</h1>
 							<p> 4, 10 in 15 km |
-								Dobrodelni tek
+								Charity run
 							</p>
 						</div>
 					</a>
 				</li>
 				<li id="race-2">
-					<a href="./go1v-12km">
+					<a href="./gare/go1v-12km">
 						<div class="card-content">
 							<h1 class="card-title">Go1V</h1>
 							<p> 12 km | 700 m
@@ -99,7 +118,7 @@
 					</a>
 				</li>
 				<li id="race-3">
-					<a href="./go3v-28km">
+					<a href="./gare/go3v-28km">
 						<div class="card-content">
 							<h1 class="card-title">Go3V</h1>
 							<p> 28 km | 1675 m
@@ -108,7 +127,7 @@
 					</a>
 				</li>
 				<li id="race-4">
-					<a href="./ultra-58km">
+					<a href="./gare/ultra-58km">
 						<div class="card-content">
 							<h1 class="card-title">Počasna a drzna ultra</h1>
 							<p> 58 km | 2864 m
@@ -120,8 +139,15 @@
 		</section>
 
 		<!--section-C-->
-		<section class="section-c grid">
-			<div class="content-wrap">
+		<section class="section-c grid center">
+			<div class="content-wrap about">
+				<p>Check-out our
+					<a href="informazioni">Info</a> and
+					<a href="chi-siamo">Chi siamo</a>
+					sections to learn more chi-siamo the race.
+					Still couldn't find what you're looking for?
+					<br><a href="contatti">Send us an email</a>. We are here for you.
+				</p>
 				<div class="icon-container">
 					<a href="https://www.instagram.com/go4trail/" target="_blank" rel="noopener noreferrer" class="icon"
 						data-target="menu">
@@ -131,13 +157,13 @@
 				</div>
 			</div>
 		</section>
+	</main>
 
-		<!--Footer-->
-		<footer id="main-footer" class="grid">
-			<div>Tek treh vrhov | by <a href="https://teowinkler.com" target="_blank" rel="noopener noreferrer">Teo
-					Winkler</a></div>
-		</footer>
-	</div>
+	<!--Footer-->
+	<footer id="main-footer" class="grid">
+		<div>Tek treh vrhov | by <a href="https://teowinkler.com" target="_blank" rel="noopener noreferrer">Teo
+				Winkler</a></div>
+	</footer>
 
 	<!--Scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
