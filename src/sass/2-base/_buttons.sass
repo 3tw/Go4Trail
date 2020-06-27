@@ -8,14 +8,17 @@
   align-self: center
 
 #menu
-  height: 100%
-  width: 0%
   position: fixed
   z-index: 1000 //must be higher than #navigation-bar
-  left: 0
   top: 0
+  left: -720px
+  height: 100%
+  width: 100%
   background-color: $green
-  transition: all 0.5s ease-in-out
+  transition: all 0.4s ease-in-out
+  &.active
+    left: 0
+  
 
 .menu-content
   position: relative

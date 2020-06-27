@@ -1,4 +1,4 @@
-git #!/usr/bin/env sh
+# git #!/usr/bin/env sh
 # run to set permission> chmod 0755 deploy.sh
 
 # abort on errors
