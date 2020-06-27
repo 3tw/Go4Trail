@@ -99,6 +99,10 @@ img {
   height: auto;
 }
 
+.pt-1 {
+  padding-top: 1rem;
+}
+
 .menu-icon {
   color: white;
   font-size: 2.5rem;
@@ -116,7 +120,7 @@ img {
   left: 0;
   top: 0;
   background-color: #4eceb2;
-  transition: 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-content {
@@ -133,7 +137,7 @@ img {
   font-size: 2rem;
   text-align: center;
   display: block;
-  transition: 0.3s;
+  transition: all 0.3s ease-in;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
 }
@@ -173,6 +177,7 @@ button {
   padding: 0.5em 1em 0.5em 1em;
   font-size: 1.3rem;
   font-weight: 400;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover,
@@ -420,11 +425,14 @@ a.toggle:hover {
   color: white;
   border-bottom: 0;
   border-radius: 3px;
+  transition: all 0.2s ease-in-out;
 }
 
 #submit-button:hover,
 #submit-button:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #4eceb2;
+  background: #87c5be40;
 }
 
 .has-error {
@@ -435,7 +443,8 @@ a.toggle:hover {
   position: relative;
 }
 
-.hero-image {
+.hero-image,
+.showcase-image {
   position: relative;
   height: 20rem;
 }
@@ -445,11 +454,6 @@ a.toggle:hover {
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.showcase-image {
-  position: relative;
-  height: 20rem;
 }
 
 .showcase-image img {
@@ -481,8 +485,11 @@ img.image-top {
 }
 
 .big-headline {
-  position: absolute;
+  position: relative;
+  display: block;
+  margin-top: auto;
   text-align: left;
+  width: 100%;
   bottom: 1rem;
   color: white;
   font-family: "Martel Sans", sans-serif;
@@ -606,9 +613,7 @@ img.image-top {
   #race-1,
 #race-2,
 #race-3,
-#race-4,
-.content-wrap,
-#main-footer div {
+#race-4 {
     grid-column: 1/2;
   }
 
