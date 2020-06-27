@@ -460,8 +460,11 @@ a.toggle:hover {
 }
 
 .showcase-title {
-  position: absolute;
+  position: relative;
+  display: block;
+  margin-top: auto;
   text-align: left;
+  width: 100%;
   bottom: 1rem;
   color: white;
   font-family: "Martel Sans", sans-serif;
@@ -504,11 +507,12 @@ img.image-top {
 }
 
 .text-wrap {
+  position: absolute;
+  display: flex;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  position: absolute;
 }
 
 .headline-text {
