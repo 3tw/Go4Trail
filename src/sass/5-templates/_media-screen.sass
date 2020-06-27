@@ -15,16 +15,16 @@
         height: 28rem
 
 @media screen and (min-width: 700px)
-    .grid
-        display: grid
-        grid-template-columns: 0.5fr 1fr 1fr 0.5fr
-
+    .content-wrap
+      padding-left: 3rem
+      padding-right: 3rem
+    
     .image-grid
         display: grid
-        grid-template-columns: 0.4fr 1fr 1fr 0.4fr
-        grid-template-rows: auto auto
-        grid-template-areas: ". race-1 race-1 ." ". race-2 race-2 ." ". race-3 race-3 ." ". race-4 race-4 ." 
-        grid-gap: 1em
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        grid-template-areas: "race-1" "race-2" "race-3" "race-4"
+        grid-gap: 1rem
 
     #race-1,
     #race-2,
@@ -32,7 +32,7 @@
     #race-4,
     .content-wrap,
     #main-footer div
-        grid-column: 2/4
+        grid-column: 1/2
 
     .showcase-title
         font-size: 3.7rem
@@ -40,9 +40,6 @@
     .showcase-image,
     .hero-image
         height: 70vh
-
-    .section-a
-        padding: 1em
     
     .section-b
         height: min-content
@@ -54,6 +51,9 @@
 
     .section-a ul li
         margin: 0
+        
+    .section-c .landing-page-text
+      text-align: center
 
     #navigation-bar #menu
         height: initial
@@ -92,5 +92,11 @@
     .landing-page-text
         font-size: 1.3rem
         line-height: 1.9rem
+        text-align: left
         padding-top: 1.5rem
         padding-bottom: 0
+
+@media screen and (min-width: 992px)
+  .content-wrap
+    padding-left: 5rem
+    padding-right: 5rem

@@ -1,6 +1,49 @@
-.grid
-    padding: 1rem 1.5rem 0 1.5rem
+.content-wrap
+  padding-left: 1rem
+  padding-right: 1rem
+  max-width: 1000px
+  margin-left: auto
+  margin-right: auto
+  
+  // sections
+.section-a,
+.section-b,
+.section-c,
+.section-d 
+  width: 100%
+  padding: 0
 
+.section-a
+    background: white
+    padding: 0
+
+.section-a ul li
+    margin-bottom: 1em
+
+.section-a ul li a
+    margin-top: 1em
+
+.section-b
+    background: white
+    font-size: 1.1rem
+    line-height: 1.8rem
+    height: auto
+    padding-top: 0
+    padding-bottom: 3rem
+
+.section-c
+    background: white
+    font-size: 1.2rem
+    line-height: 1.9rem
+
+.section-d
+    background: white
+    text-align: left
+.section-d .content-wrap
+    font-size: $text-font
+    line-height: 1.9rem
+    
+// header
 #navigation-bar
     display: flex
     flex-direction: row
@@ -40,42 +83,13 @@
     font-family: $logo-font
     padding: 0.5em
     display: inline-block
-
-.section-a
-    background: white
-    padding: 0
-
-.section-a ul li
-    margin-bottom: 1em
-
-.section-a ul li a
-    margin-top: 1em
-
-.section-b
-    background: white
-    font-size: 1.1rem
-    line-height: 1.8rem
-    height: auto
-    padding-top: 0
-    padding-bottom: 3rem
-
-.section-c
-    background: white
-    font-size: 1.2rem
-    line-height: 1.9rem
-
-.section-d
-    background: white
-    text-align: left
-.section-d .content-wrap
-    font-size: $text-font
-    line-height: 1.9rem
+    
 
 #main-footer
-    padding: 2em 0 0 0
+    padding: 2rem 0 0 0
     background: white
     color: #00000070
-    line-height: 2em
+    line-height: 2rem
     height: min-content
     font-size: 0.65rem
     text-align: center
@@ -95,9 +109,9 @@
     text-align: center
 
 .top-padding
-    padding-top: 1em
+    padding-top: 1rem
 .bottom-padding
-    padding-bottom: 1em
+    padding-bottom: 1rem
 
 // content
 .opening
@@ -130,14 +144,14 @@
     display: none
     font-size: $text-font
     &.show
-        /*display: block;*/
+        /*display: block*/
 a.toggle
     display: block
     background-color: $green
     color: white
     padding: 1rem
     border-radius: 0.1em
-    margin: 0.3em 0 0 0.3em
+    margin: 0.3rem 0 0 0
     transition: background 0.3s ease
     line-height: 1.9rem
     font-size: 1.3rem

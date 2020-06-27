@@ -23,6 +23,7 @@ $(document).ready(function () {
         }
         else {
             $smallHeadline.removeClass("active");
+            
 			$bigHeadline.addClass("active");
 			$("#menu").removeAttr("style");
     }
