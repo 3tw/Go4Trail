@@ -19,5 +19,3 @@ git push origin gh-pages
 
 #switch to master
 git checkout master
-
-

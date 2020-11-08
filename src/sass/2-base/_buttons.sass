@@ -9,16 +9,20 @@
 
 #menu
   position: fixed
+  visibility: hidden
+  opacity: 0
   z-index: 1000 //must be higher than #navigation-bar
   top: 0
   left: -720px
   height: 100%
   width: 100%
   background-color: $green
-  transition: all 0.4s ease-in-out
+  transition: left 0.4s ease-in-out, visibility 0.1s 2s ease, opacity 1s 2s ease
   &.active
+    visibility: visible
+    opacity: 1
     left: 0
-  
+    transition: left 0.4s ease-in-out
 
 .menu-content
   position: relative

@@ -1,0 +1,42 @@
+{
+  "name": "tek-treh-vrhov",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "clean": "rimraf js styles",
+    "check-js": "standardx",
+    "fix-js": "standardx --fix",
+    "dev": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "deploy": "./deploy.sh"
+  },
+  "author": {
+    "name": "Teo Winkler",
+    "email": "teo.winkler@gmail.com"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-jsx": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-standard": "^4.0.1",
+    "laravel-mix": "^5.0.9",
+    "rimraf": "^3.0.2",
+    "sass": "^1.27.0",
+    "sass-loader": "^8.0.2",
+    "webpack-livereload-plugin": "^2.3.0"
+  },
+  "standardx": {
+    "ignore": []
+  },
+  "dependencies": {}
+}

@@ -58,21 +58,24 @@
         width: 100%
         position: relative
         z-index: 1
-        transition: 0.5s
+        // transition: 0.5s
         flex-basis: auto
         display: inline-flex
         background: transparent
         align-items: center
     
-    #menu ul
+    #menu 
+      &.active
+        transition: none
+      ul
         display: inline-flex
         justify-content: flex-end
         padding-right: 0.5rem
         align-items: center
-
-    #menu ul li
-        height: min-content
-        font-size: 1.55rem
+        li
+          font-size: 1.55rem
+          height: min-content
+          transition: none
 
     #navigation-bar .menu-icon-container,
     #menu #close-button

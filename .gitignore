@@ -3,3 +3,4 @@
 .vscode
 to-do.txt
 deploy.sh
+node_modules
